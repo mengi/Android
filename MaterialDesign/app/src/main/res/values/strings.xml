@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Playground</string>
+
+    <string name="share_label">Share</string>
+    <string name="comment_label">Comment</string>
+    <string name="like_label">Like</string>
+
+    <string name="profile">Profile - Not implemented</string>
+    <string name="floating_button">Make it to do anything you want!</string>
+
+    <string name="latitude_label">Latitude &#160;</string>
+    <string name="longitude_label">Longitude &#160;</string>
+    <string name="address_label">Address</string>
+    <string name="search_label">Search</string>
+    <string name="done_label">Done</string>
+    <string name="location_label">Location</string>
+    <string name="name_label">Name</string>
+    <string name="radius_label">Radius &#160;</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete_all_geofences">Clear Geo-fences</string>
+    <string name="action_view_as_list">View as List</string>
+    <string name="action_delete">Delete</string>
+    <string name="title_activity_my">Details</string>
+    <string name="entered_geo_fence">Entered Geo-fence</string>
+    <string name="exited_geo_fence">Exited Geo-fence</string>
+    <!-- Button generic description -->
+    <string name="cancel_button_label">Cancel</string>
+    <string name="save_button_label">Save</string>
+    <string name="ok_button_label">Ok</string>
+    <string name="drawer_open">Menu Opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <!-- Drawer Items -->
+    <string name="drawer_item_one">Image Cards</string>
+    <string name="drawer_item_two">Geo-fences</string>
+    <string name="drawer_item_three">Graphs Cards</string>
+    <string name="drawer_item_four">Settings</string>
+    <!-- Drawer Header Info -->
+    <string name="session_user_name">Juan Pablo Proverbio</string>
+    <string name="session_user_email">proverbio@nowcreatives.co</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="not_connected">GoogleApiClient no yet connected. Try again.</string>
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">Your app has registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">
+        You have provided too many PendingIntents to the addGeofences() call
+    </string>
+    <string name="unknown_geofence_error">
+        Unknown error: the Geofence service is not available now
+    </string>
+    <string name="geofence_transition_invalid_type">
+        Geofence transition error: invalid transition type %1$d
+    </string>
+
+    <string name="fragment_compose_geofence_title">New Geo-fence</string>
+    <string name="location_picker_title">Location Picker</string>
+
+    <string name="location_permission_declined">Location permission is disabled. Please go to Settings and enable it if you wish to use this feature</string>
+    <string name="location_permission_explanation">You need to enable Location permission in order to use this feature</string>
+    <string name="location_picker_locate">Would you like to locate youself in the map?</string>
+
+    <!-- Configurations -->
+    <string name="google_api_key">AIzaSyC67Pv_rrtYei8fuSCrR6Ct7fWP7pHYqD0</string>
+
+</resources>

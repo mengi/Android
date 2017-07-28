@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">lonkantas</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="action_arama">Arama</string>
+    <string name="action_sepet">Alışveriş Sepetine Ekle</string>
+
+    <string name="item_baslat">Başlatma</string>
+    <string name="item_hesabim">Hesabım</string>
+    <string name="item_kategori">Kategoriler</string>
+    <string name="item_yapilandirma">Yapılandırma</string>
+
+    <string name="title_popüler_yemekler">En Çok İstenen</string>
+
+    <string name="title_tab_yemekler">YEMEKLER</string>
+    <string name="title_tab_icecekler">İÇECEKLER</string>
+    <string name="title_tab_tatlilar">TATLILAR</string>
+
+    <string name="title_tab_profil">PROFİL</string>
+    <string name="title_tab_adresler">ADRESLERİ</string>
+    <string name="title_tab_kartlar">KARTLAR</string>
+
+    <string name="text_no_kart">Hiçbir İlişkili Kart</string>
+
+    <string name="alisveris_sepeti">Alışveriş Sepeti</string>
+
+    <string name="text_sifre_degistirin">Şifrenizi Değiştirin</string>
+    <string name="sifre">Şifre</string>
+    <string name="kullanici_bilgileri">Kullanıcı Bilgileri</string>
+</resources>

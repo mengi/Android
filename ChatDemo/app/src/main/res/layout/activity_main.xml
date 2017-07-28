@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <!--List view for displaying chat messages-->
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relSendMessage"
+        android:divider="@null" />
+    <!--To type and send the message-->
+
+    <RelativeLayout
+        android:id="@+id/relSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:layout_alignParentBottom="true">
+
+
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Message"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/white"
+            android:layout_alignTop="@+id/btn_send"
+            android:layout_alignParentStart="true"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send_24dp"
+            app:layout_anchorGravity="bottom|right|end"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/editMessage"/>
+    </RelativeLayout>
+
+</RelativeLayout>

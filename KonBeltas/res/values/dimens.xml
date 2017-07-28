@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <dimen name="mnanabaslik">32dp</dimen>
+    <dimen name="mnanatablemargintop">3dp</dimen>
+    <dimen name="mnanatablemarginbottom">10dp</dimen>
+    <dimen name="mnanatablemarginbottomcari">3dp</dimen>
+    <dimen name="mnanabasliktext">18sp</dimen>
+    <dimen name="mnlstbasliktext">15sp</dimen>
+    <dimen name="mnlstbaslik">25dp</dimen>
+    <dimen name="standarteditheight">40dp</dimen>
+    <dimen name="standarttmargin">3dp</dimen>
+    <dimen name="text">12sp</dimen>
+    <dimen name="height">40dp</dimen>
+
+    <!-- Custom Tema -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="TxtSize_KayitRapor">20dp</dimen>
+    <dimen name="edittext_layout_height">40dp</dimen>
+    <dimen name="edittext_padding">10dp</dimen>
+    <dimen name="edittext_textsize">20sp</dimen>
+    <dimen name="edittextmultiline_layout_height">20dp</dimen>
+    <dimen name="txtview_textsize">20sp</dimen>
+    <dimen name="tablet_edittext_layout_height">30dp</dimen>
+    <dimen name="tablet_edittext_layout_width">60dp</dimen>
+    <dimen name="tablet_edittext_padding">3dp</dimen>
+    <dimen name="tablet_edittext_paddingTopBottom">3dp</dimen>
+    <dimen name="tablet_edittext_paddingLeftRight">8dp</dimen>
+    <dimen name="tablet_edittext_textsize">16sp</dimen>
+    <dimen name="tablet_edittextmultiline_layout_height">36dp</dimen>
+    <dimen name="tablet_txtview_textsize">18sp</dimen>
+    <!-- #Custom Tema -->
+
+</resources>

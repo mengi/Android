@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListPanel">
+    <TextView
+        android:text="ID"
+        android:id="@+id/TxtId"
+        style="@style/ListText"
+        android:visibility="invisible" />
+    <TextView
+        android:text="Ürün Kodu"
+        android:id="@+id/TxtUrunKodu"
+        style="@style/ListText"
+        android:layout_weight="2" />
+    <TextView
+        android:text="Stok Adı"
+        android:id="@+id/TxtStokAdi"
+        style="@style/ListText"
+        android:layout_weight="2" />
+    <TextView
+        android:text="Miktar"
+        android:id="@+id/TxtMiktar"
+        style="@style/ListText"
+        android:layout_weight="2" />
+    <TextView
+        android:text="Fatura Tarihi"
+        android:id="@+id/TxtGonderimTipi"
+        style="@style/ListText"
+        android:layout_weight="2" />
+</LinearLayout>

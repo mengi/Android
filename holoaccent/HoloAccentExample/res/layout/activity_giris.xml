@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edittext_backgroundcolor" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layout_rounded_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <!-- Normal -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:text="@string/girisad"
+            android:textColor="@color/textrengi"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/horizontal_divider_thickness"
+            android:background="?accentColorDarkDrawable" />
+
+        <EditText
+            android:id="@+id/TxtIpAdres"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:background="@drawable/edittext_border"
+            android:hint="@string/girisipadresi" />
+
+        <EditText
+            android:id="@+id/TxtPortNumara"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:background="@drawable/edittext_border"
+            android:hint="@string/girisport"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/TxtParola"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:background="@drawable/edittext_border"
+            android:hint="@string/girissifre"
+            android:inputType="textPassword" />
+
+        <!-- Auto complete -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/horizontal_divider_thickness"
+            android:background="?accentColorDarkDrawable" />
+
+        <Button
+            android:id="@+id/BtnGiris"
+            android:background="@drawable/style_button_mavi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:text="@string/girisbutonad"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</ScrollView>

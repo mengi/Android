@@ -1,0 +1,5 @@
+<resources>
+<string name="app_name">firebasedemo</string>
+<string name="app_activity_two"> Activity Two</string>
+<string name="app_activity_three"> Activity Three</string>
+</resources>

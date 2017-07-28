@@ -1,0 +1,22 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="material_1dp">1dp</dimen>
+    <dimen name="material_2dp">2dp</dimen>
+    <dimen name="material_4dp">4dp</dimen>
+    <dimen name="material_8dp">8dp</dimen>
+    <dimen name="material_16dp">16dp</dimen>
+    <dimen name="material_24dp">24dp</dimen>
+    <dimen name="material_32dp">32dp</dimen>
+    <dimen name="material_36dp">36dp</dimen>
+    <dimen name="material_40dp">40dp</dimen>
+    <dimen name="material_48dp">48dp</dimen>
+    <dimen name="material_64dp">64dp</dimen>
+    <dimen name="material_72dp">72dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="item_offset">8dp</dimen>
+
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="list_item_avatar_size">40dp</dimen>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.chatt.Login" >
+
+    <LinearLayout
+        android:id="@+id/LyUst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+
+
+        <RelativeLayout
+            android:id="@+id/LyOrta"
+            android:layout_width="fill_parent"
+            android:layout_height="584dp"
+            android:layout_marginLeft="@dimen/standarttmargin"
+            android:layout_marginRight="@dimen/standarttmargin"
+            android:layout_marginTop="1dp"
+            android:layout_weight="0.78" >
+
+            <LinearLayout style="@style/HeaderPanel" >
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="2"
+                    android:text="Ürün Adı" />
+                
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="2"
+                    android:text="Sipaiş Durum" />
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="1"
+                    android:text="Miktar" />
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="1"
+                    android:text="Toplam" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/LstVw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

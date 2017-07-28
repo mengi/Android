@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.afcsocet.MainActivity" >
+
+    <item
+        android:id="@+id/al"
+        android:icon="@drawable/ic_attachment_light"
+        android:showAsAction="ifRoom|withText"
+        android:title="Sipariş A."/>
+    
+    <item
+        android:id="@+id/siparis"
+        android:icon="@drawable/ic_refresh"
+        android:showAsAction="ifRoom|withText"
+        android:title="Sipariş A."/>
+
+</menu>

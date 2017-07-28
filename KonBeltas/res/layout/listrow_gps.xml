@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListPanel">
+    <TextView
+        android:text="ID"
+        android:id="@+id/TxtOtoparkKodu"
+        style="@style/ListText"
+        android:visibility="invisible" />
+    <TextView
+        android:text="Otopark"
+        android:id="@+id/TxtOtopark"
+        style="@style/ListText"
+        android:layout_weight="2" />
+    <TextView
+        android:text="Otopark Kapasite"
+        android:id="@+id/TxtOtoparkTipi"
+        style="@style/ListText"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/LytUST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corners_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <RelativeLayout
+            android:id="@+id/LyOrta"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="2dp" >
+
+            <LinearLayout
+                style="@style/HeaderPanel"
+                android:background="@drawable/baslikarkaplan" >
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="2"
+                    android:text="Otopark" />
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="1"
+                    android:text="Kapasite" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/LstVw"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/BtnYolTarifi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/style_button_mavi"
+                android:text="Yol Tarifi"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/BtnAyrintiBilgi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:text="Bilgi"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LytORTA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LytUST"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/LyUst"
+            android:layout_width="fill_parent"
+            android:layout_height="800dp"
+            android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+            android:layout_marginTop="2dp"
+            android:layout_weight="23.47" >
+
+            <TextView
+                android:id="@+id/tv_distance_time"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mnanabaslik"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mesafe:0 km, Süre:0 saat 0 dakika"
+                android:textColor="@color/mnanabasliktext"
+                android:textSize="@dimen/mnanabasliktext"
+                android:background="@drawable/baslikarkaplan"
+                android:textStyle="bold" />
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/tv_distance_time"
+                android:layout_marginTop="5dp"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <ImageButton
+                android:id="@+id/BtnFullScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:background="#fdfdfd"
+                android:padding="9dp"
+                android:src="@drawable/ic_open_with_grey600_18dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

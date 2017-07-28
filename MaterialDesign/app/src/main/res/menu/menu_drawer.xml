@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/image_grid"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/drawer_item_one"
+            />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/graphs_grid"
+            android:icon="@drawable/ic_select_all_black_48dp"
+            android:title="@string/drawer_item_three"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/geofences"
+            android:checked="true"
+            android:icon="@drawable/ic_location_white"
+            android:title="@string/drawer_item_two"/>
+    </group>
+</menu>

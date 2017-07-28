@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mnanabaslik">#2682bc</color>
+    <color name="mnanabasliktext">#ffffffff</color>
+    <color name="mnana">#FFFFFF</color>
+    <color name="mnanaitemtext">#ff333333</color>
+    <color name="label">#ff333333</color>
+    <color name="text">#ff333333</color>
+
+    <!-- Custom Tema -->
+    <color name="background_color">#FAFAFA</color>
+    <color name="text_color">#333333</color>
+    <color name="button_blue_textcolor">#FFFFFF</color>
+    <color name="edittext_textcolor">#7a7a7a</color>
+    <color name="edittext_backgroundcolor">#FFFFFF</color>
+    <color name="edittext_bordercolor">#C0C0C0</color>
+    <color name="edittext_bordercolor_focused">#66afe9</color>
+    <color name="acilisSayfasi_header_background">#66afe9</color>
+    <color name="edittext_backgroundcolordisabled">#DDDDDD</color>
+    <!-- #Custom Tema -->
+    
+    <color name="blue_light">#197AC7</color>
+    <color name="blue_dark">#197AC7</color>
+    <color name="grey_light">#DCDDD8</color>
+    <color name="mavi_acik">#01579B</color>
+    <color name="mavi_kapali">#FAFAFA</color>
+
+</resources>

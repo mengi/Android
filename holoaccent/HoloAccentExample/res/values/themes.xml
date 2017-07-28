@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Overrides the accent color -->
+    <style name="Theme.MainActivity" parent="Theme.HoloAccent.Light">
+        <item name="accentColor">#009688</item>
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+    </style>
+
+    <style name="CustomActionBarStyle" parent="HoloAccent.ActionBar.Light">
+        <item name="android:background">#cdcdcd</item>
+    </style>
+
+    <style name="Button" parent="HoloAccent.ActionBar.Light">
+        <item name="android:background">@drawable/style_button_mavi</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Listview Tema -->
+    <style name="HeaderPanel">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/table_border</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+    <style name="ListPanel">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="ListText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+</resources>

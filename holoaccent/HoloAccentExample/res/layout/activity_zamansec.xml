@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edittext_backgroundcolor" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layout_rounded_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <!-- Normal -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:text="Tarih"
+            android:textColor="@color/textrengi"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/horizontal_divider_thickness"
+            android:background="?accentColorDarkDrawable" />
+
+        <EditText
+            android:id="@+id/TxtIpAdres"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:background="@drawable/edittext_border"
+            android:enabled="true"
+            android:hint="@string/girisipadresi" />
+
+        <!-- Auto complete -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/horizontal_divider_thickness"
+            android:background="?accentColorDarkDrawable" />
+
+        <Button
+            android:id="@+id/BtnBtnTarihSec"
+            style="?buttonStyleColoredInverse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:text="Tarih Seçiniz" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:id="@+id/searchTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Two"
+        android:onClick="searchTwo"
+        android:layout_below="@+id/place_autocomplete_fragment"
+        />
+
+    <Button
+        android:id="@+id/findPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Google Places"
+        android:layout_below="@+id/searchTwo"
+        android:onClick="findPlace"/>
+
+    <Button
+        android:id="@+id/eventMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Map"
+        android:layout_below="@+id/findPlace"
+        android:onClick="eventMap"/>
+
+    <Button
+        android:id="@+id/liteModeMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mode Lite"
+        android:layout_below="@+id/eventMap"
+        android:onClick="liteModeMap"/>
+
+    <LinearLayout
+        android:layout_below="@+id/liteModeMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/lite_mode_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/lite_mode_map"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            map:liteMode="true"
+            map:mapType="none"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

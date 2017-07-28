@@ -1,0 +1,7 @@
+<resources>
+    <style name="AttachmentToolBarStyle" parent="">
+        <item name="android:elevation">0dp</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.chatt.Login" >
+
+    <LinearLayout
+        android:id="@+id/LyUst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/BtnEkle"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="Sipariş Ekle"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/BtnDuzenle"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="Sipariş Düzenle"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/BtnSil"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="Sipariş Sil"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/LyOrta"
+            android:layout_width="fill_parent"
+            android:layout_height="584dp"
+            android:layout_above="@id/LyAlt"
+            android:layout_below="@id/LyUst"
+            android:layout_marginLeft="@dimen/standarttmargin"
+            android:layout_marginRight="@dimen/standarttmargin"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.78" >
+
+            <LinearLayout style="@style/HeaderPanel" >
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="2"
+                    android:text="Ürün Adı" />
+                
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="2"
+                    android:text="Sipaiş Durum" />
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="1"
+                    android:text="Miktar" />
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="1"
+                    android:text="Toplam" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/LstVw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/LyAlt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_border_koyu" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_border_koyu"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="İndirim"
+                        android:textColor="#008000" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_border_koyu"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Toplam Tutar"
+                        android:textColor="#000036" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/TxtIndirim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_border_koyu"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="0.00" />
+
+                    <TextView
+                        android:id="@+id/TxtTutar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_border_koyu"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="0.00" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

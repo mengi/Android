@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name"> RoomDemo</string>
+    <string name="action_user_info"> Personel Detay</string>
+    <string name="action_user_list"> Personel Listesi</string>
+    <string name="action_settings"> Ayarlar</string>
+
+    <string name="app_fullName"> Ad Soyad</string>
+    <string name="app_email"> Email</string>
+    <string name="app_phoneNumber"> 0506 816 0197</string>
+    <string name="app_message"> Mesaj</string>
+    <string name="app_title"> Personel Kayıt</string>
+    <string name="app_register"> Kaydet</string>
+
+</resources>

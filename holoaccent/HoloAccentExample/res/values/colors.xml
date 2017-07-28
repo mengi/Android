@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Simply by overriding the color resources, we can change the accent color -->
+    <!-- <color name="ha__accent_default">#33b5e5</color> -->
+
+    <color name="edittext_textcolor">#7a7a7a</color>
+    <color name="edittext_backgroundcolor">#FFFFFF</color>
+    <color name="edittext_bordercolor">#C0C0C0</color>
+    <color name="edittext_bordercolor_focused">#009688</color>
+    <color name="edittext_backgroundcolordisabled">#DDDDDD</color>
+    <color name="textrengi"> #009688</color>
+    <color name="mnanabaslik">#2682bc</color>
+    <color name="mnanabasliktext">#ffffffff</color>
+    <color name="mnana">#FFFFFF</color>
+    <color name="mnanaitemtext">#ff333333</color>
+    <color name="label">#ff333333</color>
+    <color name="text">#ff333333</color>
+    
+    <color name="blue_light">#009688</color>
+    <color name="blue_dark">#009688</color>
+    <color name="grey_light">#DCDDD8</color>
+
+</resources>

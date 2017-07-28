@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- Custom Tema -->
+    <style name="Theme.OpakPlasiyer" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="android:textColor">@color/text_color</item>
+
+        <!-- Button styles -->
+        <item name="android:buttonStyle">@style/Widget.OpakPlasiyer.Button</item>
+        <item name="android:buttonStyleSmall">@style/Widget.OpakPlasiyer.Light.Button.Small</item>
+
+        <!-- EditText styles -->
+        <item name="android:editTextStyle">@style/Widget.OpakPlasiyer.Light.EditText</item>
+
+        <!-- EditText styles -->
+        <item name="android:textViewStyle">@style/Widget.OpakPlasiyer.Light.TextView</item>
+
+        <!-- Dialog Mesagge -->
+        <item name="android:alertDialogStyle">@style/Widget.OpakPlasiyer.Light.AlertDialog</item>
+
+        <!-- ProgressBar styles -->
+        <item name="android:progressBarStyleHorizontal">@style/Widget.OpakPlasiyer.Light.ProgressBar.Horizontal</item>
+    </style>
+
+    <!-- Button styles -->
+    <style name="Widget.OpakPlasiyer.Light.Button.Small" parent="android:Widget.Button">
+        <item name="android:background">@drawable/style_button_mavi</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/button_blue_textcolor</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Widget.OpakPlasiyer.Button" parent="android:Widget.Button">
+        <item name="android:background">@drawable/style_button_mavi</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:textColor">@color/button_blue_textcolor</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- EditText styles -->
+    <style name="Widget.OpakPlasiyer.Light.EditText" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/edittext_border</item>
+        <item name="android:textColor">@color/edittext_textcolor</item>
+        <item name="android:paddingLeft">@dimen/tablet_edittext_paddingLeftRight</item>
+        <item name="android:paddingRight">@dimen/tablet_edittext_paddingLeftRight</item>
+        <item name="android:paddingTop">@dimen/tablet_edittext_paddingTopBottom</item>
+        <item name="android:paddingBottom">@dimen/tablet_edittext_paddingTopBottom</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:width">0dp</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+
+    <!-- TextView styles -->
+    <style name="Widget.OpakPlasiyer.Light.TextView" parent="android:Widget.TextView">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- ProgressBar styles -->
+    <style name="Widget.OpakPlasiyer.Light.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_dizayn</item>
+        <item name="android:minHeight">15dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <!-- #Stiller -->
+
+    <style name="Widget.OpakPlasiyer.Light.AlertDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:fitsSystemWindows">true</item>
+
+        <!--
+    <item name="android:colorBackgroundCacheHint">#00000000</item>
+    <item name="android:background">#00000000</item>
+        -->
+
+    </style>
+
+    <!-- #Custom Tema -->
+
+
+    <!-- Listview Tema -->
+    <style name="HeaderPanel">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/table_border</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+    <style name="ListPanel">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="ListText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    <!-- #Listview Tema -->
+
+</resources>

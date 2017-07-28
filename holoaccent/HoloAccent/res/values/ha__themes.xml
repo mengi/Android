@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013 NEGU Soft
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <!-- Default themes -->
+    <style name="Theme.HoloAccent" parent="android:Theme.Holo">
+        <item name="accentColor">@color/ha__accent_default</item>
+
+        <item name="accentColorReference">@color/ha__accent</item>
+        <item name="accentColorDarkReference">@color/ha__accent_dark</item>
+        <item name="accentColorDrawable">@drawable/ha__fill_shape</item>
+        <item name="accentColorDarkDrawable">@drawable/ha__fill_shape_dark</item>
+
+        <item name="buttonStyleColored">@style/HoloAccent.Button.Colored</item>
+        <item name="buttonStyleColoredBright">@style/HoloAccent.Button.Colored.Bright</item>
+        <item name="buttonStyleSmallColored">@style/HoloAccent.Button.Small.Colored</item>
+        <item name="buttonStyleSmallColoredBright">@style/HoloAccent.Button.Small.Colored.Bright</item>
+        <item name="imageButtonStyleColored">@style/HoloAccent.ImageButton.Colored</item>
+        <item name="imageButtonStyleColoredBright">@style/HoloAccent.ImageButton.Colored.Bright</item>
+
+        <item name="buttonStyleColoredInverse">@style/HoloAccent.Light.Button.Colored</item>
+        <item name="buttonStyleColoredBrightInverse">@style/HoloAccent.Light.Button.Colored.Bright</item>
+        <item name="buttonStyleSmallColoredInverse">@style/HoloAccent.Light.Button.Small.Colored</item>
+        <item name="buttonStyleSmallColoredBrightInverse">@style/HoloAccent.Light.Button.Small.Colored.Bright</item>
+        <item name="imageButtonStyleColoredInverse">@style/HoloAccent.Light.ImageButton.Colored</item>
+        <item name="imageButtonStyleColoredBrightInverse">@style/HoloAccent.Light.ImageButton.Colored.Bright</item>
+        
+        <item name="accentSwitchStyle">@style/HoloAccent.AccentSwitch</item>
+        <item name="accentSearchViewStyle">@style/HoloAccent.AccentSearchView</item>
+        <item name="accentRatingBarStyle">@style/HoloAccent.AccentRagingBar</item>
+        <item name="accentContactBadgeOverlay">@drawable/ha__quickcontact_badge_overlay</item>
+
+        <item name="android:colorPressedHighlight">@color/ha__accent</item>
+        <item name="android:colorLongPressedHighlight">@color/ha__accent</item>
+        <item name="android:colorFocusedHighlight">@color/ha__accent_dark</item>
+        <item name="android:colorActivatedHighlight">@color/ha__accent_dark</item>
+        
+        <item name="android:textColorHighlight">@color/ha__accent_translucent</item>
+        <item name="android:textColorHighlightInverse">@color/ha__accent_translucent</item>
+        <item name="android:textColorLink">@color/ha__accent</item>
+        <item name="android:textColorLinkInverse">@color/ha__accent</item>
+        
+        <item name="android:editTextBackground">@drawable/ha__textfield</item>
+        
+        <item name="android:buttonStyle">@style/HoloAccent.Button</item>
+        <item name="android:buttonStyleSmall">@style/HoloAccent.Button.Small</item>
+        <item name="android:buttonStyleInset">@style/HoloAccent.Button</item>
+        <item name="android:buttonStyleToggle">@style/Widget.HoloAccent.Button.Toggle</item>
+<!--         <item name="android:mediaRouteButtonStyle">@android:style/Widget.Holo.MediaRouteButton</item> -->
+
+        <item name="android:selectableItemBackground">@drawable/ha__actionbar_item_background</item>
+        
+        <item name="android:listChoiceIndicatorSingle">@drawable/ha__btn_radio</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/ha__btn_check</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/ha__list_selector</item>
+
+        <item name="android:activatedBackgroundIndicator">@drawable/ha__activated_background</item>
+        
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.HoloAccent</item>
+        
+        <item name="android:dialogTheme">@style/BaseDialogTheme</item>
+        <item name="android:alertDialogTheme">@style/BaseDialogTheme.Alert</item>
+<!--         <item name="android:presentationTheme">@android:style/Theme.Holo.Dialog.Presentation</item> -->
+<!--         <item name="android:panelMenuListTheme">@android:style/Theme.Holo.CompactMenu</item> -->
+
+        <item name="android:textSelectHandleLeft">@drawable/ha__text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/ha__text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/ha__text_select_handle_middle</item>
+
+        <item name="android:autoCompleteTextViewStyle">@style/HoloAccent.AutoCompleteTextView</item>
+        <item name="android:imageButtonStyle">@style/HoloAccent.ImageButton</item>
+    	<item name="android:progressBarStyleHorizontal">@style/HoloAccent.ProgressBar.Horizontal</item>
+    	<item name="android:seekBarStyle">@style/HoloAccent.SeekBar</item>
+<!--         <item name="ratingBarStyle">@android:style/Widget.Holo.RatingBar</item> -->
+<!--         <item name="ratingBarStyleIndicator">@android:style/Widget.Holo.RatingBar.Indicator</item> -->
+<!--         <item name="ratingBarStyleSmall">@android:style/Widget.Holo.RatingBar.Small</item> -->
+    	<item name="android:dropDownSpinnerStyle">@style/HoloAccent.Spinner</item>
+<!--         <item name="starStyle">@android:style/Widget.Holo.CompoundButton.Star</item> -->
+        <item name="android:listPopupWindowStyle">@style/HoloAccent.ListPopupWindow</item>
+        <item name="android:popupMenuStyle">@style/HoloAccent.ListPopupWindow</item>
+
+    	<item name="android:actionDropDownStyle">@style/HoloAccent.Spinner.ActionBar</item>
+        <item name="android:actionModeBackground">@drawable/ha__actionmode_background_top</item>
+        <item name="android:actionModeSplitBackground">@drawable/ha__actionmode_background_bottom</item>
+        <item name="android:actionBarTabStyle">@style/HoloAccent.ActionBar.TabStyle</item>
+        <item name="android:actionModeCloseButtonStyle">@style/HoloAccent.ActionButton.CloseMode</item>
+        <item name="android:actionBarStyle">@style/HoloAccent.ActionBar</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.HoloAccent</item>
+
+        <item name="android:fastScrollThumbDrawable">@drawable/ha__fastscroll_thumb</item>
+
+        <item name="android:calendarViewStyle">@style/HoloAccent.CalendarView</item>
+
+        <item name="android:actionBarItemBackground">@drawable/ha__actionbar_item_background</item>
+    </style>
+    
+    <style name="Theme.HoloAccent.Light" parent="android:Theme.Holo.Light">
+        
+        <item name="accentColor">@color/ha__accent_default</item>
+
+        <item name="accentColorReference">@color/ha__accent</item>
+        <item name="accentColorDarkReference">@color/ha__accent_dark</item>
+        <item name="accentColorDrawable">@drawable/ha__fill_shape</item>
+        <item name="accentColorDarkDrawable">@drawable/ha__fill_shape_dark</item>
+
+        <item name="buttonStyleColored">@style/HoloAccent.Light.Button.Colored</item>
+        <item name="buttonStyleColoredBright">@style/HoloAccent.Light.Button.Colored.Bright</item>
+        <item name="buttonStyleSmallColored">@style/HoloAccent.Light.Button.Small.Colored</item>
+        <item name="buttonStyleSmallColoredBright">@style/HoloAccent.Light.Button.Small.Colored.Bright</item>
+        <item name="imageButtonStyleColored">@style/HoloAccent.Light.ImageButton.Colored</item>
+        <item name="imageButtonStyleColoredBright">@style/HoloAccent.Light.ImageButton.Colored.Bright</item>
+
+        <item name="buttonStyleColoredInverse">@style/HoloAccent.Button.Colored</item>
+        <item name="buttonStyleColoredBrightInverse">@style/HoloAccent.Button.Colored.Bright</item>
+        <item name="buttonStyleSmallColoredInverse">@style/HoloAccent.Button.Small.Colored</item>
+        <item name="buttonStyleSmallColoredBrightInverse">@style/HoloAccent.Button.Small.Colored.Bright</item>
+        <item name="imageButtonStyleColoredInverse">@style/HoloAccent.ImageButton.Colored</item>
+        <item name="imageButtonStyleColoredBrightInverse">@style/HoloAccent.ImageButton.Colored.Bright</item>
+        
+        <item name="accentSwitchStyle">@style/HoloAccent.AccentSwitch.Light</item>
+        <item name="accentSearchViewStyle">@style/HoloAccent.AccentSearchView.Light</item>
+        <item name="accentRatingBarStyle">@style/HoloAccent.AccentRagingBar.Light</item>
+        <item name="accentContactBadgeOverlay">@drawable/ha__quickcontact_badge_overlay_light</item>
+
+        <item name="android:colorPressedHighlight">@color/ha__accent</item>
+        <item name="android:colorLongPressedHighlight">@color/ha__accent</item>
+        <item name="android:colorFocusedHighlight">@color/ha__accent_dark</item>
+        <item name="android:colorActivatedHighlight">@color/ha__accent_dark</item>
+        
+        <item name="android:textColorHighlight">@color/ha__accent_translucent</item>
+        <item name="android:textColorHighlightInverse">@color/ha__accent_translucent</item>
+        <item name="android:textColorLink">@color/ha__accent</item>
+        <item name="android:textColorLinkInverse">@color/ha__accent</item>
+        
+        <item name="android:editTextBackground">@drawable/ha__textfield_light</item>
+        
+        <item name="android:buttonStyle">@style/HoloAccent.Light.Button</item>
+        <item name="android:buttonStyleSmall">@style/HoloAccent.Light.Button.Small</item>
+        <item name="android:buttonStyleInset">@style/HoloAccent.Light.Button</item>
+        <item name="android:buttonStyleToggle">@style/Widget.HoloAccent.Light.Button.Toggle</item>
+<!--         <item name="android:mediaRouteButtonStyle">@android:style/Widget.Holo.MediaRouteButton</item> -->
+
+        <item name="android:selectableItemBackground">@drawable/ha__actionbar_item_background</item>
+        
+        <item name="android:listChoiceIndicatorSingle">@drawable/ha__btn_radio_light</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/ha__btn_check_light</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/ha__list_selector_light</item>
+
+        <item name="android:activatedBackgroundIndicator">@drawable/ha__activated_background</item>
+        
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.HoloAccent</item>
+        
+        <item name="android:dialogTheme">@style/BaseDialogTheme.Light</item>
+        <item name="android:alertDialogTheme">@style/BaseDialogTheme.Light.Alert</item>
+<!--         <item name="android:presentationTheme">@android:style/Theme.Holo.Dialog.Presentation</item> -->
+<!--         <item name="android:panelMenuListTheme">@android:style/Theme.Holo.CompactMenu</item> -->
+
+        <item name="android:textSelectHandleLeft">@drawable/ha__text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/ha__text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/ha__text_select_handle_middle</item>
+
+        <item name="android:autoCompleteTextViewStyle">@style/HoloAccent.AutoCompleteTextView.Light</item>
+        <item name="android:imageButtonStyle">@style/HoloAccent.Light.ImageButton</item>
+    	<item name="android:progressBarStyleHorizontal">@style/HoloAccent.Light.ProgressBar.Horizontal</item>
+    	<item name="android:seekBarStyle">@style/HoloAccent.SeekBar.Light</item>
+<!--         <item name="ratingBarStyle">@android:style/Widget.Holo.RatingBar</item> -->
+<!--         <item name="ratingBarStyleIndicator">@android:style/Widget.Holo.RatingBar.Indicator</item> -->
+<!--         <item name="ratingBarStyleSmall">@android:style/Widget.Holo.RatingBar.Small</item> -->
+    	<item name="android:dropDownSpinnerStyle">@style/HoloAccent.Spinner.Light</item>
+<!--         <item name="starStyle">@android:style/Widget.Holo.CompoundButton.Star</item> -->
+        <item name="android:listPopupWindowStyle">@style/HoloAccent.ListPopupWindow.Light</item>
+        <item name="android:popupMenuStyle">@style/HoloAccent.ListPopupWindow.Light</item>
+
+    	<item name="android:actionDropDownStyle">@style/HoloAccent.Spinner.Light.ActionBar</item>
+        <item name="android:actionModeBackground">@drawable/ha__actionmode_background_top_light</item>
+        <item name="android:actionModeSplitBackground">@drawable/ha__actionmode_background_bottom_light</item>
+        <item name="android:actionBarTabStyle">@style/HoloAccent.ActionBar.TabStyle</item>
+        <item name="android:actionModeCloseButtonStyle">@style/HoloAccent.ActionButton.CloseMode.Light</item>
+        <item name="android:actionBarStyle">@style/HoloAccent.ActionBar.Light.Solid</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.HoloAccent.Light</item>
+
+        <item name="android:fastScrollThumbDrawable">@drawable/ha__fastscroll_thumb</item>
+
+        <item name="android:calendarViewStyle">@style/HoloAccent.CalendarView.Light</item>
+
+        <item name="android:actionBarItemBackground">@drawable/ha__actionbar_item_background</item>
+    </style>
+    
+    <style name="Theme.HoloAccent.Light.DarkActionBar" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="accentColor">@color/ha__accent_default</item>
+
+        <item name="accentColorReference">@color/ha__accent</item>
+        <item name="accentColorDarkReference">@color/ha__accent_dark</item>
+        <item name="accentColorDrawable">@drawable/ha__fill_shape</item>
+        <item name="accentColorDarkDrawable">@drawable/ha__fill_shape_dark</item>
+
+        <item name="buttonStyleColored">@style/HoloAccent.Light.Button.Colored</item>
+        <item name="buttonStyleColoredBright">@style/HoloAccent.Light.Button.Colored.Bright</item>
+        <item name="buttonStyleSmallColored">@style/HoloAccent.Light.Button.Small.Colored</item>
+        <item name="buttonStyleSmallColoredBright">@style/HoloAccent.Light.Button.Small.Colored.Bright</item>
+        <item name="imageButtonStyleColored">@style/HoloAccent.Light.ImageButton.Colored</item>
+        <item name="imageButtonStyleColoredBright">@style/HoloAccent.Light.ImageButton.Colored.Bright</item>
+
+        <item name="buttonStyleColoredInverse">@style/HoloAccent.Button.Colored</item>
+        <item name="buttonStyleColoredBrightInverse">@style/HoloAccent.Button.Colored.Bright</item>
+        <item name="buttonStyleSmallColoredInverse">@style/HoloAccent.Button.Small.Colored</item>
+        <item name="buttonStyleSmallColoredBrightInverse">@style/HoloAccent.Button.Small.Colored.Bright</item>
+        <item name="imageButtonStyleColoredInverse">@style/HoloAccent.ImageButton.Colored</item>
+        <item name="imageButtonStyleColoredBrightInverse">@style/HoloAccent.ImageButton.Colored.Bright</item>
+        
+        <item name="accentSwitchStyle">@style/HoloAccent.AccentSwitch.Light</item>
+        <item name="accentSearchViewStyle">@style/HoloAccent.AccentSearchView</item>
+        <item name="accentRatingBarStyle">@style/HoloAccent.AccentRagingBar.Light</item>
+        <item name="accentContactBadgeOverlay">@drawable/ha__quickcontact_badge_overlay_light</item>
+
+        <item name="android:colorPressedHighlight">@color/ha__accent</item>
+        <item name="android:colorLongPressedHighlight">@color/ha__accent</item>
+        <item name="android:colorFocusedHighlight">@color/ha__accent_dark</item>
+        <item name="android:colorActivatedHighlight">@color/ha__accent_dark</item>
+        
+        <item name="android:textColorHighlight">@color/ha__accent_translucent</item>
+        <item name="android:textColorHighlightInverse">@color/ha__accent_translucent</item>
+        <item name="android:textColorLink">@color/ha__accent</item>
+        <item name="android:textColorLinkInverse">@color/ha__accent</item>
+        
+        <item name="android:editTextBackground">@drawable/ha__textfield_light</item>
+        
+        <item name="android:buttonStyle">@style/HoloAccent.Light.Button</item>
+        <item name="android:buttonStyleSmall">@style/HoloAccent.Light.Button.Small</item>
+        <item name="android:buttonStyleInset">@style/HoloAccent.Light.Button</item>
+        <item name="android:buttonStyleToggle">@style/Widget.HoloAccent.Light.Button.Toggle</item>
+<!--         <item name="android:mediaRouteButtonStyle">@android:style/Widget.Holo.MediaRouteButton</item> -->
+
+        <item name="android:selectableItemBackground">@drawable/ha__actionbar_item_background</item>
+        
+        <item name="android:listChoiceIndicatorSingle">@drawable/ha__btn_radio_light</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/ha__btn_check_light</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/ha__list_selector</item>
+
+        <item name="android:activatedBackgroundIndicator">@drawable/ha__activated_background</item>
+        
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.HoloAccent</item>
+        
+        <item name="android:dialogTheme">@style/BaseDialogTheme.Light</item>
+        <item name="android:alertDialogTheme">@style/BaseDialogTheme.Light.Alert</item>
+<!--         <item name="android:presentationTheme">@android:style/Theme.Holo.Dialog.Presentation</item> -->
+<!--         <item name="android:panelMenuListTheme">@android:style/Theme.Holo.CompactMenu</item> -->
+
+        <item name="android:textSelectHandleLeft">@drawable/ha__text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/ha__text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/ha__text_select_handle_middle</item>
+
+        <item name="android:autoCompleteTextViewStyle">@style/HoloAccent.AutoCompleteTextView.Light</item>
+        <item name="android:imageButtonStyle">@style/HoloAccent.ImageButton</item>
+    	<item name="android:progressBarStyleHorizontal">@style/HoloAccent.Light.ProgressBar.Horizontal</item>
+    	<item name="android:seekBarStyle">@style/HoloAccent.SeekBar.Light</item>
+<!--         <item name="ratingBarStyle">@android:style/Widget.Holo.RatingBar</item> -->
+<!--         <item name="ratingBarStyleIndicator">@android:style/Widget.Holo.RatingBar.Indicator</item> -->
+<!--         <item name="ratingBarStyleSmall">@android:style/Widget.Holo.RatingBar.Small</item> -->
+    	<item name="android:dropDownSpinnerStyle">@style/HoloAccent.Spinner.Light</item>
+<!--         <item name="starStyle">@android:style/Widget.Holo.CompoundButton.Star</item> -->
+        <item name="android:listPopupWindowStyle">@style/HoloAccent.ListPopupWindow.Light</item>
+        <item name="android:popupMenuStyle">@style/HoloAccent.ListPopupWindow.Light</item>
+
+    	<item name="android:actionDropDownStyle">@style/HoloAccent.Spinner.ActionBar</item>
+        <item name="android:actionModeBackground">@drawable/ha__actionmode_background_top</item>
+        <item name="android:actionModeSplitBackground">@drawable/ha__actionmode_background_bottom</item>
+        <item name="android:actionBarTabStyle">@style/HoloAccent.ActionBar.TabStyle</item>
+        <item name="android:actionModeCloseButtonStyle">@style/HoloAccent.ActionButton.CloseMode</item>
+        <item name="android:actionBarStyle">@style/HoloAccent.ActionBar.Light.Solid.Inverse</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.HoloAccent</item>
+
+        <item name="android:fastScrollThumbDrawable">@drawable/ha__fastscroll_thumb</item>
+
+        <item name="android:calendarViewStyle">@style/HoloAccent.CalendarView.Light</item>
+
+        <item name="android:actionBarItemBackground">@drawable/ha__actionbar_item_background</item>
+    </style>
+
+    <!-- Colored ActionBar themes -->
+    <style name="Theme.HoloAccent.ColoredActionBar">
+        <item name="coloredActionBarBackgroundStyle">@style/HoloAccent.ActionBarBackground.Solid</item>
+        <item name="coloredActionBarStackedBackgroundStyle">@style/HoloAccent.ActionBarBackground.Translucent.Soft</item>
+        <item name="coloredActionBarSplitBackgroundStyle">@style/HoloAccent.ActionBarBackground.Translucent.Soft</item>
+        <item name="android:actionBarStyle">@style/HoloAccent.ActionBar.Colored</item>
+    </style>
+    <style name="Theme.HoloAccent.ColoredActionBar.Inverse">
+        <item name="coloredActionBarBackgroundStyle">@style/HoloAccent.ActionBarBackground.Solid</item>
+        <item name="coloredActionBarStackedBackgroundStyle">@style/HoloAccent.ActionBarBackground.Translucent.Hard</item>
+        <item name="coloredActionBarSplitBackgroundStyle">@style/HoloAccent.ActionBarBackground.Translucent.Hard</item>
+
+        <item name="android:actionDropDownStyle">@style/HoloAccent.Spinner.Light.ActionBar</item>
+        <item name="android:actionModeBackground">@drawable/ha__actionmode_background_top_colored</item>
+        <item name="android:actionModeSplitBackground">@drawable/ha__actionmode_background_bottom_colored</item>
+        <item name="android:actionBarTabStyle">@style/HoloAccent.ActionBar.TabStyle</item>
+        <item name="android:actionModeCloseButtonStyle">@style/HoloAccent.ActionButton.CloseMode.Light</item>
+        <item name="android:actionBarStyle">@style/HoloAccent.ActionBar.Colored.Inverse</item>
+        <item name="android:actionBarTabBarStyle">@android:style/Widget.Holo.Light.ActionBar.TabBar.Inverse</item>
+        <item name="android:actionBarTabTextStyle">@android:style/Widget.Holo.Light.ActionBar.TabText.Inverse</item>
+        <item name="android:actionBarDivider">@drawable/ha__ab_divider_light</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.HoloAccent.Light</item>
+        <item name="android:actionMenuTextColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:actionModeStyle">@android:style/Widget.Holo.Light.ActionMode.Inverse</item>
+
+        <item name="android:homeAsUpIndicator">@drawable/ha__ab_home_as_up_light</item>
+        <item name="android:actionOverflowButtonStyle">@android:style/Widget.Holo.Light.ActionButton.Overflow</item>
+
+        <item name="android:actionModeCloseDrawable">@drawable/ha__ic_cab_done_light</item>
+        <item name="android:actionModeCutDrawable">@drawable/ha__ic_menu_cut_light</item>
+        <item name="android:actionModeCopyDrawable">@drawable/ha__ic_menu_copy_light</item>
+        <item name="android:actionModePasteDrawable">@drawable/ha__ic_menu_paste_light</item>
+        <item name="android:actionModeSelectAllDrawable">@drawable/ha__ic_menu_selectall_light</item>
+    </style>
+    <style name="Theme.HoloAccent.Light.ColoredActionBar">
+        <item name="coloredActionBarBackgroundStyle">@style/HoloAccent.ActionBarBackground.Solid</item>
+        <item name="coloredActionBarStackedBackgroundStyle">@style/HoloAccent.ActionBarBackground.Translucent.Soft</item>
+        <item name="coloredActionBarSplitBackgroundStyle">@style/HoloAccent.ActionBarBackground.Translucent.Soft</item>
+
+        <item name="android:actionModeBackground">@drawable/ha__actionmode_background_top_colored</item>
+        <item name="android:actionModeSplitBackground">@drawable/ha__actionmode_background_bottom_colored</item>
+        <item name="android:actionBarStyle">@style/HoloAccent.ActionBar.Light.Solid.Colored</item>
+    </style>
+    <style name="Theme.HoloAccent.Light.ColoredActionBar.Inverse">
+        <item name="coloredActionBarBackgroundStyle">@style/HoloAccent.ActionBarBackground.Solid</item>
+        <item name="coloredActionBarStackedBackgroundStyle">@style/HoloAccent.ActionBarBackground.Translucent.Hard</item>
+        <item name="coloredActionBarSplitBackgroundStyle">@style/HoloAccent.ActionBarBackground.Translucent.Hard</item>
+
+        <item name="android:actionDropDownStyle">@style/HoloAccent.Spinner.ActionBar</item>
+        <item name="android:actionModeBackground">@drawable/ha__actionmode_background_top</item>
+        <item name="android:actionModeSplitBackground">@drawable/ha__actionmode_background_bottom</item>
+        <item name="android:actionBarTabStyle">@style/HoloAccent.ActionBar.TabStyle</item>
+        <item name="android:actionModeCloseButtonStyle">@style/HoloAccent.ActionButton.CloseMode</item>
+        <item name="android:actionBarStyle">@style/HoloAccent.ActionBar.Light.Solid.Inverse.Colored</item>
+        <item name="android:actionBarTabBarStyle">@android:style/Widget.Holo.ActionBar.TabBar</item>
+        <item name="android:actionBarTabTextStyle">@android:style/Widget.Holo.Light.ActionBar.TabText.Inverse</item>
+        <item name="android:actionBarDivider">@drawable/ha__ab_divider</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.HoloAccent</item>
+        <item name="android:actionMenuTextColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:actionModeStyle">@android:style/Widget.Holo.Light.ActionMode.Inverse</item>
+
+        <item name="android:homeAsUpIndicator">@drawable/ha__ab_home_as_up</item>
+        <item name="android:actionOverflowButtonStyle">@android:style/Widget.Holo.ActionButton.Overflow</item>
+
+        <item name="android:actionModeCloseDrawable">@drawable/ha__ic_cab_done</item>
+        <item name="android:actionModeCutDrawable">@drawable/ha__ic_menu_cut</item>
+        <item name="android:actionModeCopyDrawable">@drawable/ha__ic_menu_copy</item>
+        <item name="android:actionModePasteDrawable">@drawable/ha__ic_menu_paste</item>
+        <item name="android:actionModeSelectAllDrawable">@drawable/ha__ic_menu_selectall</item>
+    </style>
+    
+    <!-- 
+    	Base dialog themes, they are referenced from attributes in other thems. 
+    	DON'T use them as themes for your activityes. Use 'Theme.HoloAccent.Dialog' 
+    	and 'Theme.HoloAccent.Light.Dialog' instead
+     -->
+    <!-- @hide -->
+    <style name="BaseDialogTheme" parent="android:Theme.Holo.Dialog">
+        <!-- Copy of Theme.HoloAccents, except the 'accentColor*' attributes -->
+
+        <item name="buttonStyleColored">@style/HoloAccent.Button.Colored</item>
+        <item name="buttonStyleColoredBright">@style/HoloAccent.Button.Colored.Bright</item>
+        <item name="buttonStyleSmallColored">@style/HoloAccent.Button.Small.Colored</item>
+        <item name="buttonStyleSmallColoredBright">@style/HoloAccent.Button.Small.Colored.Bright</item>
+        <item name="imageButtonStyleColored">@style/HoloAccent.ImageButton.Colored</item>
+        <item name="imageButtonStyleColoredBright">@style/HoloAccent.ImageButton.Colored.Bright</item>
+
+        <item name="buttonStyleColoredInverse">@style/HoloAccent.Light.Button.Colored</item>
+        <item name="buttonStyleColoredBrightInverse">@style/HoloAccent.Light.Button.Colored.Bright</item>
+        <item name="buttonStyleSmallColoredInverse">@style/HoloAccent.Light.Button.Small.Colored</item>
+        <item name="buttonStyleSmallColoredBrightInverse">@style/HoloAccent.Light.Button.Small.Colored.Bright</item>
+        <item name="imageButtonStyleColoredInverse">@style/HoloAccent.Light.ImageButton.Colored</item>
+        <item name="imageButtonStyleColoredBrightInverse">@style/HoloAccent.Light.ImageButton.Colored.Bright</item>
+        
+        <item name="accentSwitchStyle">@style/HoloAccent.AccentSwitch</item>
+        <item name="accentSearchViewStyle">@style/HoloAccent.AccentSearchView</item>
+        <item name="accentRatingBarStyle">@style/HoloAccent.AccentRagingBar</item>
+        <item name="accentContactBadgeOverlay">@drawable/ha__quickcontact_badge_overlay</item>
+
+        <item name="android:colorPressedHighlight">@color/ha__accent</item>
+        <item name="android:colorLongPressedHighlight">@color/ha__accent</item>
+        <item name="android:colorFocusedHighlight">@color/ha__accent_dark</item>
+        <item name="android:colorActivatedHighlight">@color/ha__accent_dark</item>
+        
+        <item name="android:textColorHighlight">@color/ha__accent_translucent</item>
+        <item name="android:textColorHighlightInverse">@color/ha__accent_translucent</item>
+        <item name="android:textColorLink">@color/ha__accent</item>
+        <item name="android:textColorLinkInverse">@color/ha__accent</item>
+        
+        <item name="android:editTextBackground">@drawable/ha__textfield</item>
+        
+        <item name="android:buttonStyle">@style/HoloAccent.Button</item>
+        <item name="android:buttonStyleSmall">@style/HoloAccent.Button.Small</item>
+        <item name="android:buttonStyleInset">@style/HoloAccent.Button</item>
+        <item name="android:buttonStyleToggle">@style/Widget.HoloAccent.Button.Toggle</item>
+<!--         <item name="android:mediaRouteButtonStyle">@android:style/Widget.Holo.MediaRouteButton</item> -->
+
+        <item name="android:selectableItemBackground">@drawable/ha__actionbar_item_background</item>
+        
+        <item name="android:listChoiceIndicatorSingle">@drawable/ha__btn_radio</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/ha__btn_check</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/ha__list_selector</item>
+
+        <item name="android:activatedBackgroundIndicator">@drawable/ha__activated_background</item>
+        
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.HoloAccent</item>
+        
+        <item name="android:dialogTheme">@style/BaseDialogTheme</item>
+        <item name="android:alertDialogTheme">@style/BaseDialogTheme.Alert</item>
+<!--         <item name="android:presentationTheme">@android:style/Theme.Holo.Dialog.Presentation</item> -->
+<!--         <item name="android:panelMenuListTheme">@android:style/Theme.Holo.CompactMenu</item> -->
+
+        <item name="android:textSelectHandleLeft">@drawable/ha__text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/ha__text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/ha__text_select_handle_middle</item>
+
+        <item name="android:autoCompleteTextViewStyle">@style/HoloAccent.AutoCompleteTextView</item>
+        <item name="android:imageButtonStyle">@style/HoloAccent.ImageButton</item>
+    	<item name="android:progressBarStyleHorizontal">@style/HoloAccent.ProgressBar.Horizontal</item>
+    	<item name="android:seekBarStyle">@style/HoloAccent.SeekBar</item>
+<!--         <item name="ratingBarStyle">@android:style/Widget.Holo.RatingBar</item> -->
+<!--         <item name="ratingBarStyleIndicator">@android:style/Widget.Holo.RatingBar.Indicator</item> -->
+<!--         <item name="ratingBarStyleSmall">@android:style/Widget.Holo.RatingBar.Small</item> -->
+    	<item name="android:dropDownSpinnerStyle">@style/HoloAccent.Spinner</item>
+<!--         <item name="starStyle">@android:style/Widget.Holo.CompoundButton.Star</item> -->
+        <item name="android:listPopupWindowStyle">@style/HoloAccent.ListPopupWindow</item>
+        <item name="android:popupMenuStyle">@style/HoloAccent.ListPopupWindow</item>
+
+    	<item name="android:actionDropDownStyle">@style/HoloAccent.Spinner.ActionBar</item>
+        <item name="android:actionModeBackground">@drawable/ha__actionmode_background_top</item>
+        <item name="android:actionModeSplitBackground">@drawable/ha__actionmode_background_bottom</item>
+        <item name="android:actionBarTabStyle">@style/HoloAccent.ActionBar.TabStyle</item>
+        <item name="android:actionModeCloseButtonStyle">@style/HoloAccent.ActionButton.CloseMode</item>
+        <item name="android:actionBarStyle">@style/HoloAccent.ActionBar</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.HoloAccent</item>
+
+        <item name="android:fastScrollThumbDrawable">@drawable/ha__fastscroll_thumb</item>
+
+        <item name="android:calendarViewStyle">@style/HoloAccent.CalendarView</item>
+    </style>
+    <!-- @hide -->
+    <style name="BaseDialogTheme.Light" parent="android:Theme.Holo.Light.Dialog">
+        <!-- Copy of Theme.HoloAccents.Light, except the 'accentColor*' attributes -->
+
+        <item name="buttonStyleColored">@style/HoloAccent.Light.Button.Colored</item>
+        <item name="buttonStyleColoredBright">@style/HoloAccent.Light.Button.Colored.Bright</item>
+        <item name="buttonStyleSmallColored">@style/HoloAccent.Light.Button.Small.Colored</item>
+        <item name="buttonStyleSmallColoredBright">@style/HoloAccent.Light.Button.Small.Colored.Bright</item>
+        <item name="imageButtonStyleColored">@style/HoloAccent.Light.ImageButton.Colored</item>
+        <item name="imageButtonStyleColoredBright">@style/HoloAccent.Light.ImageButton.Colored.Bright</item>
+
+        <item name="buttonStyleColoredInverse">@style/HoloAccent.Button.Colored</item>
+        <item name="buttonStyleColoredBrightInverse">@style/HoloAccent.Button.Colored.Bright</item>
+        <item name="buttonStyleSmallColoredInverse">@style/HoloAccent.Button.Small.Colored</item>
+        <item name="buttonStyleSmallColoredBrightInverse">@style/HoloAccent.Button.Small.Colored.Bright</item>
+        <item name="imageButtonStyleColoredInverse">@style/HoloAccent.ImageButton.Colored</item>
+        <item name="imageButtonStyleColoredBrightInverse">@style/HoloAccent.ImageButton.Colored.Bright</item>
+        
+        <item name="accentSwitchStyle">@style/HoloAccent.AccentSwitch.Light</item>
+        <item name="accentSearchViewStyle">@style/HoloAccent.AccentSearchView.Light</item>
+        <item name="accentRatingBarStyle">@style/HoloAccent.AccentRagingBar.Light</item>
+        <item name="accentContactBadgeOverlay">@drawable/ha__quickcontact_badge_overlay_light</item>
+
+        <item name="android:colorPressedHighlight">@color/ha__accent</item>
+        <item name="android:colorLongPressedHighlight">@color/ha__accent</item>
+        <item name="android:colorFocusedHighlight">@color/ha__accent_dark</item>
+        <item name="android:colorActivatedHighlight">@color/ha__accent_dark</item>
+        
+        <item name="android:textColorHighlight">@color/ha__accent_translucent</item>
+        <item name="android:textColorHighlightInverse">@color/ha__accent_translucent</item>
+        <item name="android:textColorLink">@color/ha__accent</item>
+        <item name="android:textColorLinkInverse">@color/ha__accent</item>
+        
+        <item name="android:editTextBackground">@drawable/ha__textfield_light</item>
+        
+        <item name="android:buttonStyle">@style/HoloAccent.Light.Button</item>
+        <item name="android:buttonStyleSmall">@style/HoloAccent.Light.Button.Small</item>
+        <item name="android:buttonStyleInset">@style/HoloAccent.Light.Button</item>
+        <item name="android:buttonStyleToggle">@style/Widget.HoloAccent.Light.Button.Toggle</item>
+<!--         <item name="android:mediaRouteButtonStyle">@android:style/Widget.Holo.MediaRouteButton</item> -->
+
+        <item name="android:selectableItemBackground">@drawable/ha__actionbar_item_background</item>
+        
+        <item name="android:listChoiceIndicatorSingle">@drawable/ha__btn_radio_light</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/ha__btn_check_light</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/ha__list_selector_light</item>
+
+        <item name="android:activatedBackgroundIndicator">@drawable/ha__activated_background</item>
+        
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.HoloAccent</item>
+        
+        <item name="android:dialogTheme">@style/BaseDialogTheme.Light</item>
+        <item name="android:alertDialogTheme">@style/BaseDialogTheme.Light.Alert</item>
+<!--         <item name="android:presentationTheme">@android:style/Theme.Holo.Dialog.Presentation</item> -->
+<!--         <item name="android:panelMenuListTheme">@android:style/Theme.Holo.CompactMenu</item> -->
+
+        <item name="android:textSelectHandleLeft">@drawable/ha__text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/ha__text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/ha__text_select_handle_middle</item>
+
+        <item name="android:autoCompleteTextViewStyle">@style/HoloAccent.AutoCompleteTextView.Light</item>
+        <item name="android:imageButtonStyle">@style/HoloAccent.Light.ImageButton</item>
+    	<item name="android:progressBarStyleHorizontal">@style/HoloAccent.Light.ProgressBar.Horizontal</item>
+    	<item name="android:seekBarStyle">@style/HoloAccent.SeekBar.Light</item>
+<!--         <item name="ratingBarStyle">@android:style/Widget.Holo.RatingBar</item> -->
+<!--         <item name="ratingBarStyleIndicator">@android:style/Widget.Holo.RatingBar.Indicator</item> -->
+<!--         <item name="ratingBarStyleSmall">@android:style/Widget.Holo.RatingBar.Small</item> -->
+    	<item name="android:dropDownSpinnerStyle">@style/HoloAccent.Spinner.Light</item>
+<!--         <item name="starStyle">@android:style/Widget.Holo.CompoundButton.Star</item> -->
+        <item name="android:listPopupWindowStyle">@style/HoloAccent.ListPopupWindow.Light</item>
+        <item name="android:popupMenuStyle">@style/HoloAccent.ListPopupWindow.Light</item>
+
+    	<item name="android:actionDropDownStyle">@style/HoloAccent.Spinner.Light.ActionBar</item>
+        <item name="android:actionModeBackground">@drawable/ha__actionmode_background_top_light</item>
+        <item name="android:actionModeSplitBackground">@drawable/ha__actionmode_background_bottom_light</item>
+        <item name="android:actionBarTabStyle">@style/HoloAccent.ActionBar.TabStyle</item>
+        <item name="android:actionModeCloseButtonStyle">@style/HoloAccent.ActionButton.CloseMode.Light</item>
+        <item name="android:actionBarStyle">@style/HoloAccent.ActionBar.Light.Solid</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.HoloAccent.Light</item>
+
+        <item name="android:fastScrollThumbDrawable">@drawable/ha__fastscroll_thumb</item>
+
+        <item name="android:calendarViewStyle">@style/HoloAccent.CalendarView.Light</item>
+    </style>
+    
+    <!--
+        Dialog themes.
+        If you apply the themes to an Activity, you will need to programatically modify 
+    	the title divider color. See DividerPainter for more information.
+    -->
+    <style name="Theme.HoloAccent.Dialog" parent="BaseDialogTheme">
+        <item name="accentColor">@color/ha__accent_default</item>
+
+        <item name="accentColorReference">@color/ha__accent</item>
+        <item name="accentColorDarkReference">@color/ha__accent_dark</item>
+        <item name="accentColorDrawable">@drawable/ha__fill_shape</item>
+        <item name="accentColorDarkDrawable">@drawable/ha__fill_shape_dark</item>
+    </style>
+    <style name="Theme.HoloAccent.Light.Dialog" parent="BaseDialogTheme.Light">
+        <item name="accentColor">@color/ha__accent_default</item>
+
+        <item name="accentColorReference">@color/ha__accent</item>
+        <item name="accentColorDarkReference">@color/ha__accent_dark</item>
+        <item name="accentColorDrawable">@drawable/ha__fill_shape</item>
+        <item name="accentColorDarkDrawable">@drawable/ha__fill_shape_dark</item>
+    </style>
+    
+    <!-- Extension themes (the parents are HoloAccent themes) -->
+    <style name="BaseDialogTheme.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.HoloAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="BaseDialogTheme.Light.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.HoloAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+
+</resources>

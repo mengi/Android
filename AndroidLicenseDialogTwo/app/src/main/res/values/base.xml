@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="coustom_notices_default_style" translatable="false">
+        p.license {
+        background:grey;
+        }
+        body {
+        font-family: sans-serif;
+        overflow-wrap: break-word;
+        background:#616161;
+        }
+        pre {
+        background-color: #eeeeee;
+        padding: 1em;
+        white-space: pre-wrap;
+        }
+    </string>
+    <string name="coustom_notices_format_style" translatable="false">
+        p.license {
+        %1$s
+        }
+        body {
+        font-family: sans-serif;
+        overflow-wrap: break-word;
+        %2$s
+        }
+        pre {
+        %3$s
+        padding: 1em;
+        white-space: pre-wrap;
+        }
+        li {
+        %4$s
+        }
+        li a {
+        %5$s
+        }
+    </string>
+
+</resources>

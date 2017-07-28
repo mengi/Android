@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="C:/Users/Menginar/Desktop/Gerekli_jar/ksoap2-android-assembly-2.4-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="/ZBarScannerActivity/libs/zbar.jar"/>
+	<classpathentry kind="src" path="/MainActivity"/>
+	<classpathentry kind="src" path="/ZBarScannerActivity"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

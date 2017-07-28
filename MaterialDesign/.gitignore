@@ -1,0 +1,6 @@
+syntax: regexp
+/local.properties
+/build/
+.gradle
+build/
+.idea/

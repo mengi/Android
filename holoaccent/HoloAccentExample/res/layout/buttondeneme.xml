@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mnana"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/LyUst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/standarttmargin"
+                    android:layout_weight="2"
+                    android:text="Aralık Kur" />
+
+                <EditText
+                    android:id="@+id/TxtSaatAralik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/standarteditheight"
+                    android:layout_weight="6"
+                    android:background="@drawable/edittext_border"
+                    android:digits="0123456789-"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/BtnIlkTarihSec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/standarteditheight"
+                    android:layout_marginLeft="@dimen/standarttmargin"
+                    android:layout_marginRight="@dimen/standarttmargin"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_button_mavi"
+                    android:text="..."
+                    android:textColor="#ffffff" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="83dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/BtnKaydet"
+                    android:layout_width="15dp"
+                    android:layout_height="@dimen/standarteditheight"
+                    android:layout_marginLeft="@dimen/standarttmargin"
+                    android:layout_marginRight="@dimen/standarttmargin"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_button_mavi"
+                    android:text=" Kaydet"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/BtnDuzenle"
+                    android:layout_width="15dp"
+                    android:layout_height="@dimen/standarteditheight"
+                    android:layout_marginLeft="@dimen/standarttmargin"
+                    android:layout_marginRight="@dimen/standarttmargin"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_button_mavi"
+                    android:text=" Düzenle"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/BtnSil"
+                    android:layout_width="15dp"
+                    android:layout_height="@dimen/standarteditheight"
+                    android:layout_marginLeft="@dimen/standarttmargin"
+                    android:layout_marginRight="@dimen/standarttmargin"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_button_mavi"
+                    android:text=" Sil"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/BtnDurdur"
+                    android:layout_width="15dp"
+                    android:layout_height="@dimen/standarteditheight"
+                    android:layout_marginLeft="@dimen/standarttmargin"
+                    android:layout_marginRight="@dimen/standarttmargin"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_button_mavi"
+                    android:text=" Durdur"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/BtnKur"
+                    android:layout_width="15dp"
+                    android:layout_height="@dimen/standarteditheight"
+                    android:layout_marginLeft="@dimen/standarttmargin"
+                    android:layout_marginRight="@dimen/standarttmargin"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_button_mavi"
+                    android:text=" Başlat"
+                    android:textColor="#ffffff" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="125dp"
+            android:background="#999999" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LyOrta"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/LyUst" >
+
+        <LinearLayout
+            style="@style/HeaderPanel"
+            android:layout_marginTop="1dp" >
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="Açıklama" />
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="Saat" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/LstVw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mnana">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="64dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_dark" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:text="Ürün Miktarını Girniz"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/TxtMiktar"
+        android:inputType="text"
+        android:layout_height="@dimen/standarteditheight"
+        android:background="@drawable/custom_edit_text"
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        android:digits="1234567890."
+        android:hint="Miktar" />
+</LinearLayout>

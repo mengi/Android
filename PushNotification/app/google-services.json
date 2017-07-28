@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "386474240409",
+    "firebase_url": "https://fir-demo-2efc4.firebaseio.com",
+    "project_id": "fir-demo-2efc4",
+    "storage_bucket": "fir-demo-2efc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386474240409:android:4b01f9d90443bb8f",
+        "android_client_info": {
+          "package_name": "com.example.menginar.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386474240409-l991l0hhbb3o9c6bi2sl5i4uqcfil1gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.menginar.firebasedemo",
+            "certificate_hash": "89dbb30b21a1257fbc17bd0867d764ef22bd9d5b"
+          }
+        },
+        {
+          "client_id": "386474240409-is9mq9prc1pkng4ig9rf3mbcmpl3ne8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxNW4KPx1N8LVc2Juc3C0TeWVMI2xgYNo"
+        },
+        {
+          "current_key": "AIzaSyBEz2RjCnuZcehJFHbTmyMvRe1Y2xNsuqU"
+        },
+        {
+          "current_key": "AIzaSyB2vDg7qrZhNrGsrLOmI3rtghQj64D2qJs"
+        },
+        {
+          "current_key": "AIzaSyDcySQ-wkKSp72wRtDHgwN8OuP-LJ8fea4"
+        },
+        {
+          "current_key": "AIzaSyAZ_jiRgjRcI6yij1FY2DQY4IewvFJWrzM"
+        },
+        {
+          "current_key": "AIzaSyC4dIv-5IXYJ9P9wiBAzdo0PH2M3n6PTtk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386474240409-is9mq9prc1pkng4ig9rf3mbcmpl3ne8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

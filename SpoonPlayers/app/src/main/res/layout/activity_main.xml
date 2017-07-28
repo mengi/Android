@@ -1,0 +1,83 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+    tools:context=".ui.MainActivity">
+
+    <!-- The toolbar and main content view -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <FrameLayout
+                android:id="@+id/statusBar4000"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/statusBarHeight"
+                android:background="@color/inset"/>
+
+            <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/statusBar"
+                android:background="?attr/colorPrimary"
+                android:translationZ="4dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+            <FrameLayout
+                android:id="@+id/statusBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/statusBarHeight"
+                android:background="?colorPrimaryDark"
+                android:translationZ="4dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- The navigation drawer -->
+
+    <com.example.javier.spoonplayers.Utils.ScrimInsetsFrameLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrimInsetsFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:fitsSystemWindows="true"
+        app:insetForeground="@color/inset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <!-- Your drawer content -->
+
+            <include layout="@layout/drawer" />
+
+        </LinearLayout>
+
+    </com.example.javier.spoonplayers.Utils.ScrimInsetsFrameLayout>
+</android.support.v4.widget.DrawerLayout>

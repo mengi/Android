@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013 NEGU Soft
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Empty style to be able to define substyles (ex. 'HoloAccent.XXX') -->
+    <style name="HoloAccent" />
+    <style name="TextAppearance" />
+    <style name="TextAppearance.HoloAccent" />
+    
+    <!-- Actionbar customization -->
+    <style name="HoloAccent.ActionBar" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ha__actionbar_background</item>
+        <item name="android:progressBarStyle">@style/HoloAccent.ProgressBar.Horizontal</item>
+    </style>
+    <style name="HoloAccent.ActionBar.Solid" parent="android:Widget.Holo.ActionBar.Solid">
+        <item name="android:progressBarStyle">@style/HoloAccent.ProgressBar.Horizontal</item>
+    </style>
+    <style name="HoloAccent.ActionBar.Light" parent="android:Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ha__actionbar_background</item>
+        <item name="android:progressBarStyle">@style/HoloAccent.ProgressBar.Horizontal</item>
+    </style>
+    <style name="HoloAccent.ActionBar.Light.Solid" parent="android:Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:progressBarStyle">@style/HoloAccent.ProgressBar.Horizontal</item>
+    </style>
+    <style name="HoloAccent.ActionBar.Light.Solid.Inverse" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:progressBarStyle">@style/HoloAccent.ProgressBar.Horizontal</item>
+    </style>
+
+    <!-- Colored Actionbar -->
+    <style name="HoloAccent.ActionBar.Colored">
+        <item name="android:background">@drawable/ha__ab_background</item>
+        <item name="android:backgroundStacked">@drawable/ha__ab_background_stacked</item>
+        <item name="android:backgroundSplit">@drawable/ha__ab_background_bottom</item>
+    </style>
+    <style name="HoloAccent.ActionBar.Solid.Colored">
+        <item name="android:background">@drawable/ha__ab_background</item>
+        <item name="android:backgroundStacked">@drawable/ha__ab_background_stacked</item>
+        <item name="android:backgroundSplit">@drawable/ha__ab_background_bottom</item>
+    </style>
+    <style name="HoloAccent.ActionBar.Colored.Inverse" parent="HoloAccent.ActionBar.Light.Solid">
+        <item name="android:background">@drawable/ha__ab_background_inverse</item>
+        <item name="android:backgroundStacked">@drawable/ha__ab_background_stacked_inverse</item>
+        <item name="android:backgroundSplit">@drawable/ha__ab_background_bottom_inverse</item>
+        <item name="android:titleTextStyle">@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse</item>
+        <item name="android:subtitleTextStyle">@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle.Inverse</item>
+    </style>
+    <style name="HoloAccent.ActionBar.Light.Colored">
+        <item name="android:background">@drawable/ha__ab_background</item>
+        <item name="android:backgroundStacked">@drawable/ha__ab_background_stacked</item>
+        <item name="android:backgroundSplit">@drawable/ha__ab_background_bottom</item>
+    </style>
+    <style name="HoloAccent.ActionBar.Light.Solid.Colored">
+        <item name="android:background">@drawable/ha__ab_background</item>
+        <item name="android:backgroundStacked">@drawable/ha__ab_background_stacked</item>
+        <item name="android:backgroundSplit">@drawable/ha__ab_background_bottom</item>
+    </style>
+    <style name="HoloAccent.ActionBar.Light.Solid.Inverse.Colored">
+        <item name="android:background">@drawable/ha__ab_background_inverse_light</item>
+        <item name="android:backgroundStacked">@drawable/ha__ab_background_stacked_inverse_light</item>
+        <item name="android:backgroundSplit">@drawable/ha__ab_background_bottom_inverse_light</item>
+    </style>
+
+    <!-- Colored Actionbar background styles -->
+    <style name="HoloAccent.ActionBarBackground" />
+    <style name="HoloAccent.ActionBarBackground.Solid" />
+    <style name="HoloAccent.ActionBarBackground.Translucent">
+        <item name="accentLineWidth">0.5dp</item>
+        <item name="accentLineOpacity">72</item>
+        <item name="accentBackgroundOpacity">48</item>
+    </style>
+    <style name="HoloAccent.ActionBarBackground.Translucent.Soft" />
+    <style name="HoloAccent.ActionBarBackground.Translucent.Hard">
+        <item name="accentLineOpacity">144</item>
+        <item name="accentBackgroundOpacity">96</item>
+    </style>
+    <style name="HoloAccent.ActionBarBackground.Native">
+        <item name="accentLineWidth">0.5dp</item>
+        <item name="accentLineColor">@android:color/white</item>
+        <item name="accentLineOpacity">51</item>
+        <item name="accentBackgroundColor">@android:color/white</item>
+        <item name="accentBackgroundOpacity">0</item>
+    </style>
+    <style name="HoloAccent.ActionBarBackground.Native.Solid">
+        <item name="accentLineColor">#0e0e0e</item>
+        <item name="accentLineOpacity">255</item>
+        <item name="accentBackgroundColor">#111111</item>
+        <item name="accentBackgroundOpacity">255</item>
+    </style>
+    <style name="HoloAccent.ActionBarBackground.Native.Light">
+        <item name="accentLineColor">@android:color/black</item>
+        <item name="accentLineOpacity">61</item>
+        <item name="accentBackgroundColor">@android:color/black</item>
+        <item name="accentBackgroundOpacity">13</item>
+    </style>
+    <style name="HoloAccent.ActionBarBackground.Native.Light.Solid">
+        <item name="accentLineColor">#c6c6c6</item>
+        <item name="accentLineOpacity">255</item>
+        <item name="accentBackgroundColor">#dddddd</item>
+        <item name="accentBackgroundOpacity">255</item>
+    </style>
+    
+    <!-- Action Mode customization -->
+    <style name="HoloAccent.ActionButton.CloseMode" parent="android:Widget.Holo.ActionButton.CloseMode">
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+    </style>
+    <style name="HoloAccent.ActionButton.CloseMode.Light" parent="android:Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+    </style>
+    
+    <!-- Actionbar tab style: with the actionbar accent color -->
+    <style name="HoloAccent.ActionBar.TabStyle" parent="android:Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/ha__ab_tab_background</item>
+    </style>
+    <!-- Actionbar tab style: with the actionbar accent color -->
+    <style name="HoloAccent.ActionBar.TabStyle.Accent">
+        <item name="android:background">@drawable/ha__tab_background</item>
+    </style>
+    <!-- Actionbar tab style: default accent underline but actionbar colour touch feedback -->
+    <style name="HoloAccent.ActionBar.TabStyle.Mixed">
+        <item name="android:background">@drawable/ha__ab_tab_background_mixed</item>
+    </style>
+    
+    <!-- Button styles -->
+    <style name="HoloAccent.Button" parent="android:Widget.Holo.Button">
+        <item name="android:background">@drawable/ha__btn_default</item>
+    </style>
+    <style name="HoloAccent.Button.Small" parent="android:Widget.Holo.Button.Small">
+        <item name="android:background">@drawable/ha__btn_default</item>
+    </style>
+    <style name="HoloAccent.ImageButton" parent="android:Widget.Holo.ImageButton">
+        <item name="android:background">@drawable/ha__btn_default</item>
+    </style>
+    
+    <!-- Button styles (light) -->
+    <style name="HoloAccent.Light.Button" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/ha__btn_default</item>
+    </style>
+    <style name="HoloAccent.Light.Button.Small" parent="android:Widget.Holo.Light.Button.Small">
+        <item name="android:background">@drawable/ha__btn_default</item>
+    </style>
+    <style name="HoloAccent.Light.ImageButton" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:background">@drawable/ha__btn_default</item>
+    </style>
+    
+    <!-- Toogle button -->
+    <style name="Widget.HoloAccent.Button.Toggle" parent="android:Widget.Holo.Button.Toggle">
+        <item name="android:background">@drawable/ha__btn_toggle</item>
+    </style>
+    <style name="Widget.HoloAccent.Light.Button.Toggle" parent="android:Widget.Holo.Light.Button.Toggle">
+        <item name="android:background">@drawable/ha__btn_toggle</item>
+    </style>
+    
+    <!-- Colored button styles -->
+    <style name="HoloAccent.Button.Colored" parent="android:Widget.Holo.Button">
+        <item name="android:background">@drawable/ha__btn_default_colored</item>
+    </style>
+    <style name="HoloAccent.Button.Small.Colored" parent="android:Widget.Holo.Button.Small">
+        <item name="android:background">@drawable/ha__btn_default_colored</item>
+    </style>
+    <style name="HoloAccent.ImageButton.Colored" parent="android:Widget.Holo.ImageButton">
+        <item name="android:background">@drawable/ha__btn_default_colored</item>
+    </style>
+    
+    <!-- Colored button styles (Light) -->
+    <style name="HoloAccent.Light.Button.Colored" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/ha__btn_default_colored</item>
+    </style>
+    <style name="HoloAccent.Light.Button.Small.Colored" parent="android:Widget.Holo.Light.Button.Small">
+        <item name="android:background">@drawable/ha__btn_default_colored</item>
+    </style>
+    <style name="HoloAccent.Light.ImageButton.Colored" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:background">@drawable/ha__btn_default_colored</item>
+    </style>
+    
+    <!-- Bright colored button styles -->
+    <style name="HoloAccent.Button.Colored.Bright" parent="android:Widget.Holo.Button">
+        <item name="android:background">@drawable/ha__btn_default_colored_bright</item>
+    </style>
+    <style name="HoloAccent.Button.Small.Colored.Bright" parent="android:Widget.Holo.Button.Small">
+        <item name="android:background">@drawable/ha__btn_default_colored_bright</item>
+    </style>
+    <style name="HoloAccent.ImageButton.Colored.Bright" parent="android:Widget.Holo.ImageButton">
+        <item name="android:background">@drawable/ha__btn_default_colored_bright</item>
+    </style>
+    
+    <!-- Bright colored button styles (Light) -->
+    <style name="HoloAccent.Light.Button.Colored.Bright" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/ha__btn_default_colored_bright</item>
+    </style>
+    <style name="HoloAccent.Light.Button.Small.Colored.Bright" parent="android:Widget.Holo.Light.Button.Small">
+        <item name="android:background">@drawable/ha__btn_default_colored_bright</item>
+    </style>
+    <style name="HoloAccent.Light.ImageButton.Colored.Bright" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:background">@drawable/ha__btn_default_colored_bright</item>
+    </style>
+
+    <!-- Spinner styles -->
+    <style name="HoloAccent.Spinner" parent="android:Widget.Holo.Spinner">
+        <item name="android:background">@drawable/ha__spinner_background</item>
+    </style>
+    <style name="HoloAccent.Spinner.Light" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/ha__spinner_background_light</item>
+    </style>
+    <style name="HoloAccent.Spinner.ActionBar">
+        <item name="android:background">@drawable/ha__ab_spinner_background</item>
+    </style>
+    <style name="HoloAccent.Spinner.Light.ActionBar">
+        <item name="android:background">@drawable/ha__ab_spinner_background_light</item>
+    </style>
+
+    <!-- SeekBar styles -->
+    <style name="HoloAccent.SeekBar" parent="android:Widget.Holo.SeekBar">
+        <item name="android:progressDrawable">@drawable/ha__scrubber_progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@drawable/ha__scrubber_progress_horizontal</item>
+        <item name="android:thumb">@drawable/ha__scrubber_control_selector</item>
+    </style>
+    <style name="HoloAccent.SeekBar.Light" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/ha__scrubber_progress_horizontal_light</item>
+        <item name="android:indeterminateDrawable">@drawable/ha__scrubber_progress_horizontal_light</item>
+        <item name="android:thumb">@drawable/ha__scrubber_control_selector</item>
+    </style>
+
+    <!-- List separator styles. Apply them to "android:listSeparatorTextViewStyle" in your theme. -->
+    <style name="HoloAccent.TextView.ListSeparator" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/ha__accent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/ha__list_separator</item>
+    </style>
+    <style name="HoloAccent.TextView.ListSeparator.Dark">
+        <item name="android:textColor">@color/ha__accent_dark</item>
+        <item name="android:background">@drawable/ha__list_separator_dark</item>
+    </style>
+
+    <!-- SeekBar styles -->
+    <style name="HoloAccent.PagerTabStrip">
+        <item name="android:textColor">@color/ha__accent</item>
+        <item name="android:background">@drawable/ha__pager_tab_strip_background</item>
+    </style>
+    <style name="HoloAccent.PagerTabStrip.Light">
+        <item name="android:background">@drawable/ha__pager_tab_strip_background_light</item>
+    </style>
+
+    <!-- CalendarView style -->
+    <style name="HoloAccent.CalendarView" parent="android:Widget.Holo.CalendarView">
+        <item name="android:selectedWeekBackgroundColor">@color/ha__calendar_selected_week</item>
+        <item name="android:selectedDateVerticalBar">@drawable/ha__calendar_day_line</item>
+    </style>
+    <style name="HoloAccent.CalendarView.Light" parent="android:Widget.Holo.Light.CalendarView">
+        <item name="android:selectedWeekBackgroundColor">@color/ha__calendar_selected_week</item>
+        <item name="android:selectedDateVerticalBar">@drawable/ha__calendar_day_line</item>
+    </style>
+    
+    <!-- AutoCompleteTextView styles -->
+    <style name="HoloAccent.AutoCompleteTextView" parent="android:Widget.Holo.AutoCompleteTextView">
+        <item name="android:dropDownSelector">?android:attr/listChoiceBackgroundIndicator</item>
+    </style>
+    <style name="HoloAccent.AutoCompleteTextView.Light" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+        <item name="android:dropDownSelector">?android:attr/listChoiceBackgroundIndicator</item>
+    </style>
+    
+    <!-- ListPopupWindow styles -->
+    <style name="HoloAccent.ListPopupWindow" parent="android:Widget.Holo.ListPopupWindow">
+        <item name="android:dropDownSelector">?android:attr/listChoiceBackgroundIndicator</item>
+    </style>
+    <style name="HoloAccent.ListPopupWindow.Light" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:dropDownSelector">?android:attr/listChoiceBackgroundIndicator</item>
+    </style>
+    
+    <!-- Horizontal progress bar (must be set on the layout XML directly) -->
+    <style name="HoloAccent.ProgressBar.Horizontal" parent="android:Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/ha__progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@drawable/ha__progress_indeterminate_horizontal</item>
+    </style>
+    <style name="HoloAccent.Light.ProgressBar.Horizontal" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/ha__progress_horizontal_light</item>
+        <item name="android:indeterminateDrawable">@drawable/ha__progress_indeterminate_horizontal</item>
+    </style>
+    
+    <!-- Horizontal progress bar like the native one (must be set on the layout XML directly) -->
+    <style name="HoloAccent.ProgressBar.Horizontal.Legacy">
+        <item name="android:indeterminateDrawable">@drawable/ha__progress_indeterminate_horizontal_legacy</item>
+    </style>
+    <style name="HoloAccent.Light.ProgressBar.Horizontal.Legacy">
+        <item name="android:indeterminateDrawable">@drawable/ha__progress_indeterminate_horizontal_legacy</item>
+    </style>
+    
+    <!-- Text appearance -->
+    <style name="TextAppearance.HoloAccent.DialogWindowTitle" parent="android:TextAppearance.Holo.DialogWindowTitle">
+        <item name="android:textColor">@color/ha__accent</item>
+    </style>
+    <style name="TextAppearance.HoloAccent.Widget.DropDownItem" parent="android:TextAppearance.Holo.Widget.DropDownItem">
+        <item name="android:textColor">@color/ha__accent</item>
+    </style>
+    
+    <!-- Dialog styles -->
+    <style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.HoloAccent.DialogWindowTitle</item>
+    </style>
+    <style name="DialogWindowTitle.HoloAccent">
+    </style>
+    
+    <!-- AccentSwitch style. It doens't extend any Holo style -->
+    <style name="HoloAccent.AccentSwitch">
+        <item name="android:track">@drawable/ha__switch_track</item>
+        <item name="android:thumb">@drawable/ha__switch_thumb</item>
+<!--         <item name="android:textOn">@string/ha__switchOn</item> -->
+<!--         <item name="android:textOff">@string/ha__switchOff</item> -->
+        <item name="android:thumbTextPadding">12dip</item>
+        <item name="android:switchMinWidth">@dimen/ha__switch_min_width</item>
+        <item name="android:switchPadding">16dip</item>
+        <item name="android:switchTextAppearance">@style/TextAppearance.HoloAccent.Switch</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="HoloAccent.AccentSwitch.Light">
+        <item name="android:track">@drawable/ha__switch_track_light</item>
+        <item name="android:switchTextAppearance">@style/TextAppearance.HoloAccent.Switch.Light</item>
+    </style>
+    <style name="TextAppearance.HoloAccent.Switch">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.HoloAccent.Switch.Light">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    
+    <!-- AccentSwitch style. It doens't extend any Holo style -->
+    <style name="HoloAccent.AccentSearchView">
+        <item name="android:background">@drawable/ha__searchview_textfield</item>
+    </style>
+    <style name="HoloAccent.AccentSearchView.Light">
+        <item name="android:background">@drawable/ha__searchview_textfield_light</item>
+    </style>
+
+    <!-- AccentRagingBar style. It doens't extend any Holo style -->
+    <style name="HoloAccent.AccentRagingBar">
+        <item name="android:colorBackground">#b7b7b7</item>
+        <item name="android:colorForeground">#cccccc</item>
+        <item name="android:colorForegroundInverse">#f4f4f4</item>
+    </style>
+    <style name="HoloAccent.AccentRagingBar.Light">
+        <item name="android:colorBackground">#b7b7b7</item>
+        <item name="android:colorForeground">#7f7f7f</item>
+        <item name="android:colorForegroundInverse">#404040</item>
+    </style>
+
+</resources>

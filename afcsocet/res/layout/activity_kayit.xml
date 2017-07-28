@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corners_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <!-- Normal -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:text="Kayıt Ekle"
+            android:textColor="@color/blue_dark"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue_dark" />
+
+        <EditText
+            android:id="@+id/TxtSubeAdi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:background="@drawable/custom_edit_text"
+            android:hint="Şube Adı" />
+
+        <EditText
+            android:id="@+id/TxtIcIp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:background="@drawable/custom_edit_text"
+            android:digits="0123456789.-_ "
+            android:hint="İç İp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/TxtDisIp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:background="@drawable/custom_edit_text"
+            android:digits="0123456789.-_ "
+            android:hint="Dış Ip"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/TxtPortNumarasi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:background="@drawable/custom_edit_text"
+            android:digits="0123456789.-_ "
+            android:hint="Port Numarası"
+            android:inputType="numberDecimal" />
+
+        <!-- Auto complete -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/horizontal_divider_thickness"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/blue_dark" />
+
+        <LinearLayout
+            android:id="@+id/layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <Button
+                android:id="@+id/BtnKaydet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/style_button_mavi"
+                android:text="Ekle"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/BtnSil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:text="Sil"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/BtnGuncelle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Düzenle"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/LyOrta"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2dp" >
+
+            <LinearLayout style="@style/HeaderPanel" >
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="2"
+                    android:text="Şube Adı" />
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="2"
+                    android:text="İç İp" />
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="2"
+                    android:text="Dış Ip" />
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_weight="2"
+                    android:text="Port Numarası" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/LstVw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

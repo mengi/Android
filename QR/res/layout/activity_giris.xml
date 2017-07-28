@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edittext_backgroundcolor" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corners_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <!-- Normal -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:text="Giriş"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/horizontal_divider_thickness"
+            android:background="@color/view" />
+
+        <EditText
+            android:id="@+id/TxtKullaniciAdi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:background="@drawable/custom_edit_text"
+            android:hint="Kullanıcı Adı" />
+
+        <EditText
+            android:id="@+id/TxtParola"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:background="@drawable/custom_edit_text"
+            android:hint="Parola"
+            android:inputType="textPassword" />
+
+        <!-- Auto complete -->
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/horizontal_divider_thickness"
+            android:background="@color/view" />
+
+        <Button
+            android:id="@+id/BtnGiris"
+            android:background="@drawable/style_button_mavi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edittexttab"
+            android:text="Giriş"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PhotoMap</string>
+    <string name="text_personal_info">Personel İnformation</string>
+    <string name="text_complain_info">Complain İnformation</string>
+
+    <string name="facebook_app_id">1704223316549878</string>
+    <string name="GOOGLE_MAP_API_KEY">AIzaSyANT9Bns-sR5rlTVWfE1aEvk2E2A_GhkcM</string>
+</resources>

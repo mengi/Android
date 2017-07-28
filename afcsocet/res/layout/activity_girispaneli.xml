@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    	    <LinearLayout
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginLeft="10dip"
+    	        android:layout_marginRight="10dip"
+    	        android:layout_marginTop="10dip"
+    	        android:background="@drawable/rounded_corners_white"
+    	        android:focusable="true"
+    	        android:focusableInTouchMode="true"
+    	        android:gravity="center_horizontal|center_vertical|fill_horizontal"
+    	        android:orientation="vertical"
+    	        android:padding="10dip" >
+
+            <TableLayout
+                android:id="@+id/TlParametreAyarlari"
+                android:layout_width="fill_parent"
+                android:layout_height="175dp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/standarttmargin"
+                        android:layout_weight="1"
+                        android:text="İp Adres" />
+
+                    <EditText
+                        android:id="@+id/TxtIpAdresi"
+                        android:layout_height="@dimen/standarteditheight"
+                        android:layout_marginRight="@dimen/standarttmargin"
+                        android:layout_weight="6" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/standarttmargin"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/standarttmargin"
+                        android:layout_weight="1"
+                        android:text="Port Numara" />
+
+                    <EditText
+                        android:id="@+id/TxtPortNumara"
+                        android:layout_height="@dimen/standarteditheight"
+                        android:layout_marginRight="@dimen/standarttmargin"
+                        android:layout_weight="6" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/standarttmargin"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/standarttmargin"
+                        android:layout_weight="1"
+                        android:text="Seri Numara" />
+
+                    <EditText
+                        android:id="@+id/TxtSeriNumara"
+                        android:layout_height="@dimen/standarteditheight"
+                        android:layout_marginRight="@dimen/standarttmargin"
+                        android:layout_weight="6" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/standarttmargin"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/standarttmargin"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/BtnBaglantiAyar"
+                        android:layout_height="@dimen/standarteditheight"
+                        android:layout_marginRight="@dimen/standarttmargin"
+                        android:background="@drawable/button_background"
+                        android:layout_weight="6"
+                        android:text="Bağlantı" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/standarttmargin"
+                        android:layout_weight="2" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="4dp"
+                android:background="#999999" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.chatt.Login" >
+
+    <RelativeLayout
+        android:id="@+id/LyUst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standarttmargin"
+        android:layout_marginRight="@dimen/standarttmargin"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/TxtMiktar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/standarteditheight"
+                android:layout_weight="6"
+                android:background="@drawable/custom_edit_text"
+                android:inputType="numberDecimal"
+                android:digits="1234567890."
+                android:hint="Miktar" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/BtnUrunEkle"
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/standarttmargin"
+                android:layout_marginRight="@dimen/standarttmargin"
+                android:layout_weight="1"
+                android:contentDescription="@string/buttondesc"
+                android:src="@drawable/ic_attachment_light" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LyAlt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/LyUst"
+        android:layout_marginLeft="@dimen/standarttmargin"
+        android:layout_marginRight="@dimen/standarttmargin"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout style="@style/HeaderPanel" >
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="Ad" />
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="Fiyat" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/LstVw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

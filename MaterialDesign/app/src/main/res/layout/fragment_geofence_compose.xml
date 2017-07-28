@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/app_base_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/app_base_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_label"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:hint="Write the Geo-fence name"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:background="@android:color/transparent"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/app_base_margin"
+        android:paddingBottom="@dimen/app_base_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/location_label"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:paddingBottom="@dimen/app_base_padding"/>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick a location"
+            android:textColor="@color/text"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/app_base_margin"
+        android:paddingBottom="@dimen/app_base_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/radius_label"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/radiusLabel"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/radius_label"
+                android:textColor="@color/text"
+                android:textSize="16dp"/>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/radius"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:max="5000"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+    </com.google.android.gms.maps.MapView>
+</LinearLayout>

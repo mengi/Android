@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.javier.spoonplayers.NoticeDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusBarHeight"
+            android:background="?attr/colorPrimaryDark"
+            android:translationZ="4dp" />
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?colorPrimary"
+            android:translationZ="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarThumbVertical="@drawable/scrollbar">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:isScrollContainer="true"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewNotice"
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/drawer_header" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="@dimen/material_16dp"
+                        android:layout_marginTop="@dimen/material_8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewNoticeName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/transparent_black"
+                            android:gravity="center"
+                            android:text="Symbol" />
+
+                        <TextView
+                            android:id="@+id/textViewNoticeDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/transparent_black"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Price" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textViewNoticeSubject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:text="26 Mayıs 1904'te İstanbul'da doğdu. 25 Mayıs 1983'te İstanbul'da yaşamını yitirdi. Çocukluğu büyükbabasının Çemberlitaş'taki konağında geçti. Bahriye Mektebi'nde, İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'nde öğrenim gördü. Felsefe Bölümü'ndeki öğrenimini yarıda bırakarak 1924'te Paris'e gitti. Bu kez Sarbonne Üniversitesi'nde felsefe eğitimi almaya başladı. 1925'te öğrenimini tekrar yarıda bırakıp yurda döndü. 1926-1939 arasında İstanbul'da çeşitli bankalarda çalıştı. 1939-1943 arasında Ankara Dil ve Tarih Coğrafya Fakültesi, Devlet Konservatuvarı, İstanbul Güzel Sanatlar Akadamesi'nde dersler verdi. "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/md_secondary_text_icons" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

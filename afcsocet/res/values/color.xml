@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mnanabaslik">#2682bc</color>
+    <color name="mnanabasliktext">#ffffffff</color>
+    <color name="mnana">#ffffffff</color>
+    <color name="mnanaitemtext">#ff333333</color>
+    <color name="label">#ff333333</color>
+    <color name="text">#ff333333</color>
+
+    <!-- Custom Tema -->
+    <color name="button_blue_textcolor">#FFFFFF</color>
+    <!-- #Custom Tema -->
+    
+    <color name="blue_light">#678793</color>
+	<color name="blue_dark">#678793</color>
+	<color name="grey_light">#93BBD3</color>
+	<color name="yandi">#579184</color>
+	<color name="kapandi">#CC3C3C</color>
+	
+		<!-- Proje Tema Renkler -->
+    <color name="background_color">#EEEEEE</color>
+    <color name="text_color">#333333</color>
+    <color name="button_orange_background">#FF351A</color>
+    <color name="button_orange_textcolor">#FFFFFF</color>
+    <color name="textview_textcolor">#7a7a7a</color>
+    <color name="textview_textcolor_white">#dddddd</color>
+    <color name="textview_textcolor_grey">#bababa</color>
+    <color name="edittext_textcolor">#7a7a7a</color>
+    <color name="edittext_backgroundcolor">#EEEEEE</color>
+    <color name="edittext_bordercolor">#C0C0C0</color>
+    <color name="edittext_bordercolor_focused">#66afe9</color>
+    <color name="acilisSayfasi_header_background">#66afe9</color>
+    <color name="edittext_backgroundcolordisabled">#DDDDDD</color>
+
+</resources>

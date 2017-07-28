@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="75dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:background="#009688" >
+
+                    <TextView
+                        android:id="@+id/TxtPanelBir"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/mnanabaslik"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Smart House"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/mnanabasliktext"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/BtnAydinlatma"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="1dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/aydinlatma" />
+
+                    <ImageButton
+                        android:id="@+id/BtnSicaklik"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.25"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/sicaklik" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Aydınlatma Kontrolü"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Sıcaklık"
+                        android:textStyle="bold|italic" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/BtnKapiyiAc"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapiac" />
+
+                    <ImageButton
+                        android:id="@+id/BtnHizArAz"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.25"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/artirma" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Kapıyı Aç"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Hız Artır-Azalt"
+                        android:textStyle="bold|italic" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/BtnTumuAc"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ac" />
+
+                    <ImageButton
+                        android:id="@+id/BtnTumuKapat"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.25"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Tümünü Aç"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Tümünü Kapat"
+                        android:textStyle="bold|italic" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

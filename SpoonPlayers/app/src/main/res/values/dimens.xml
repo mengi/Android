@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="material_1dp">1dp</dimen>
+    <dimen name="material_2dp">2dp</dimen>
+    <dimen name="material_4dp">4dp</dimen>
+    <dimen name="material_8dp">8dp</dimen>
+    <dimen name="material_16dp">16dp</dimen>
+    <dimen name="material_24dp">24dp</dimen>
+    <dimen name="material_32dp">32dp</dimen>
+    <dimen name="material_48dp">48dp</dimen>
+    <dimen name="material_64dp">64dp</dimen>
+    <dimen name="material_72dp">72dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="item_offset">8dp</dimen>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.chatt.Login" >
+
+    <RelativeLayout
+        android:id="@+id/LyUst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standarttmargin"
+        android:layout_marginRight="@dimen/standarttmargin"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/TxtMasaAdi"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/standarteditheight"
+                android:layout_weight="6"
+                android:background="@drawable/custom_edit_text"
+                android:hint="Masa Arama Yap"
+                android:textSize="15sp" />
+            
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LyOrta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LyUst"
+        android:layout_marginLeft="@dimen/standarttmargin"
+        android:layout_marginRight="@dimen/standarttmargin"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/BtnAc"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:drawableLeft= "@drawable/masa_ac"
+                android:focusableInTouchMode="false"
+                android:text="Masa Aç"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/BtnKapat"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:drawableLeft= "@drawable/masa_kapat"
+                android:focusableInTouchMode="false"
+                android:text="Masa Kapat"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LyOrta1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LyOrta"
+        android:layout_marginLeft="@dimen/standarttmargin"
+        android:layout_marginRight="@dimen/standarttmargin"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/BtnSiparisGonder"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:drawableLeft= "@drawable/siparis_gonder"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="Sipariş Gönder"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/BtnSiparisDurum"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:drawableLeft= "@drawable/liste"
+                android:focusableInTouchMode="false"
+                android:text="Sipariş Durum"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LyAlt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/LyOrta1"
+        android:layout_marginLeft="@dimen/standarttmargin"
+        android:layout_marginRight="@dimen/standarttmargin"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout style="@style/HeaderPanel" >
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="Masa Adı" />
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="M. Durum" />
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="Sip. Durum" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/LstVw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

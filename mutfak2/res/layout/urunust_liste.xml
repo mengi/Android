@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.chatt.Login" >
+
+    <RelativeLayout
+        android:id="@+id/LyUst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standarttmargin"
+        android:layout_marginRight="@dimen/standarttmargin"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/TxtUrunAdi"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/standarteditheight"
+                android:layout_weight="6"
+                android:background="@drawable/custom_edit_text"
+                android:hint="Arama Yap" >
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LyAlt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/LyUst"
+        android:layout_marginLeft="@dimen/standarttmargin"
+        android:layout_marginRight="@dimen/standarttmargin"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout style="@style/HeaderPanel" >
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="Menü" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/LstVw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

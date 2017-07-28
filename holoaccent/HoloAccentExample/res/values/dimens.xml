@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="horizontal_divider_thickness">1dp</dimen>
+    <dimen name="EditTextHeight">45dp</dimen>
+    <dimen name="edittexttab">2dp</dimen>
+    <dimen name="mnanabaslik">32dp</dimen>
+    <dimen name="mnanatablemargintop">3dp</dimen>
+    <dimen name="mnanatablemarginbottom">10dp</dimen>
+    <dimen name="mnanatablemarginbottomcari">3dp</dimen>
+    <dimen name="mnanabasliktext">18sp</dimen>
+    <dimen name="mnlstbasliktext">15sp</dimen>
+    <dimen name="mnlstbaslik">25dp</dimen>
+    <dimen name="standarteditheight">40dp</dimen>
+    <dimen name="standarttmargin">3dp</dimen>
+    <dimen name="text">12sp</dimen>
+    <dimen name="height">40dp</dimen>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013 NEGU Soft
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+
+    <!-- Accent color definition -->
+    <declare-styleable name="HoloAccent">
+        <attr name="accentColor" format="color|reference" />
+        <attr name="accentColorDark" format="color|reference" />
+        <attr name="accentColorActionBar" format="color|reference" />
+
+        <!-- Used to support color overriding -->
+        <attr name="accentColorReference" format="color" />
+        <attr name="accentColorDarkReference" format="color" />
+
+        <!-- Used when a drawable is expected, typically for the 'background' -->
+        <attr name="accentColorDrawable" format="reference" />
+        <attr name="accentColorDarkDrawable" format="reference" />
+    </declare-styleable>
+    
+    <!-- Colored button styles -->
+    <attr name="buttonStyleColored" format="reference" />
+    <attr name="buttonStyleColoredBright" format="reference" />
+    <attr name="buttonStyleColoredInverse" format="reference" />
+    <attr name="buttonStyleColoredBrightInverse" format="reference" />
+
+    <attr name="buttonStyleSmallColored" format="reference" />
+    <attr name="buttonStyleSmallColoredBright" format="reference" />
+    <attr name="buttonStyleSmallColoredInverse" format="reference" />
+    <attr name="buttonStyleSmallColoredBrightInverse" format="reference" />
+
+    <attr name="imageButtonStyleColored" format="reference" />
+    <attr name="imageButtonStyleColoredBright" format="reference" />
+    <attr name="imageButtonStyleColoredInverse" format="reference" />
+    <attr name="imageButtonStyleColoredBrightInverse" format="reference" />
+
+    <!-- ActionBar background. Only used on ColoredActionBar styles. -->
+    <attr name="coloredActionBarBackgroundStyle" format="reference" />
+    <attr name="coloredActionBarStackedBackgroundStyle" format="reference" />
+    <attr name="coloredActionBarSplitBackgroundStyle" format="reference" />
+    <declare-styleable name="ColoredActionBarStacked">
+        <attr name="accentLineWidth" format="dimension|reference" />
+        <attr name="accentLineColor" format="color|reference" />
+        <attr name="accentLineOpacity" format="integer|reference" />
+        <attr name="accentBackgroundColor" format="color|reference" />
+        <attr name="accentBackgroundOpacity" format="integer|reference" />
+    </declare-styleable>
+
+    
+    <!-- AccentSearchView -->
+    <attr name="accentSearchViewStyle" format="reference" />
+    <declare-styleable name="AccentSearchView">
+        <attr name="android:background" />
+    </declare-styleable>
+    
+    <!-- AccentSwitch -->
+    <attr name="accentSwitchStyle" format="reference" />
+    <declare-styleable name="AccentSwitch">
+        <attr name="android:thumb" />
+        <attr name="android:track" />
+        <attr name="android:textOn" />
+        <attr name="android:textOff" />
+        <attr name="android:thumbTextPadding" />
+        <attr name="android:switchTextAppearance" />
+        <attr name="android:switchMinWidth" />
+        <attr name="android:switchPadding" />
+        <attr name="android:textAppearance" />
+    </declare-styleable>
+    <declare-styleable name="TextAppearanceAccentSwitch">
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="android:textStyle" />
+        <attr name="android:typeface" />
+        <attr name="android:fontFamily" />
+        <attr name="android:textColorHighlight" />
+        <attr name="android:textColorHint" />
+        <attr name="android:textColorLink" />
+        <attr name="android:textAllCaps" />
+    </declare-styleable>
+
+    <!-- AccentRatingBar -->
+    <attr name="accentRatingBarStyle" format="reference" />
+    <declare-styleable name="AccentRatingBar">
+        <!-- empty star background color -->
+        <attr name="android:colorBackground" />
+        <!-- border color for empty star -->
+        <attr name="android:colorForeground" />
+        <!-- border color for filled star -->
+        <attr name="android:colorForegroundInverse" />
+    </declare-styleable>
+
+    <!-- AccentQuickContactBadge -->
+    <attr name="accentContactBadgeOverlay" format="reference" />
+
+</resources>

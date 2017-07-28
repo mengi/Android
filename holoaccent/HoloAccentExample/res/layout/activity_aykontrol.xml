@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="75dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:background="#009688" >
+
+                    <TextView
+                        android:id="@+id/TxtPanelBir"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/mnanabaslik"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Mutfak"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/mnanabasliktext"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/Role1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/firin" />
+
+                    <ImageButton
+                        android:id="@+id/Role2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.05"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/caydanlik" />
+
+                    <ImageButton
+                        android:id="@+id/Btn3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/camasir" />
+
+                    <ImageButton
+                        android:id="@+id/Btn4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/isi" />
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:background="#009688" >
+
+                    <TextView
+                        android:id="@+id/TxtPanelIki"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/mnanabaslik"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Salon"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/mnanabasliktext"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/Led1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led1" />
+
+                    <ImageButton
+                        android:id="@+id/Led2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.05"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led2" />
+
+                    <ImageButton
+                        android:id="@+id/Led3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+
+                    <ImageButton
+                        android:id="@+id/Btn8"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led4" />
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:background="#009688" >
+
+                    <TextView
+                        android:id="@+id/TxtPanelUc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/mnanabaslik"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Koridor"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/mnanabasliktext"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/Btn9"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+
+                    <ImageButton
+                        android:id="@+id/Btn10"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.05"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+
+                    <ImageButton
+                        android:id="@+id/Btn11"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+
+                    <ImageButton
+                        android:id="@+id/Btn12"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:background="#009688" >
+
+                    <TextView
+                        android:id="@+id/TxtPanelDort"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/mnanabaslik"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Oda"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/mnanabasliktext"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/Btn13"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+
+                    <ImageButton
+                        android:id="@+id/Btn14"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.05"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+
+                    <ImageButton
+                        android:id="@+id/Btn15"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+
+                    <ImageButton
+                        android:id="@+id/Btn16"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:background="#009688" >
+
+                    <TextView
+                        android:id="@+id/TxtPanelBes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/mnanabaslik"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Giriş"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/mnanabasliktext"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/Btn17"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+
+                    <ImageButton
+                        android:id="@+id/Btn18"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.05"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+
+                    <ImageButton
+                        android:id="@+id/Btn19"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+
+                    <ImageButton
+                        android:id="@+id/Btn20"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/led3" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

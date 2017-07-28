@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mnana" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="75dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/baslikarkaplan" >
+
+                    <TextView
+                        android:id="@+id/TxtPanelBir"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/mnanabaslik"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Aydınlatma Kontrol Paneli"
+                        android:textColor="@color/mnanabasliktext"
+                        android:textSize="@dimen/mnanabasliktext"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/Btn1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.05"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <TextView
+                        android:id="@+id/a1"
+                        android:layout_weight="1"
+                        android:background="@color/mnana"
+                        android:gravity="center"
+                        android:text="1 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a2"
+                        android:layout_weight="1"
+                        android:background="@color/mnana"
+                        android:gravity="center"
+                        android:text="2 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a3"
+                        android:layout_weight="1"
+                        android:background="@color/mnana"
+                        android:gravity="center"
+                        android:text="3 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a4"
+                        android:layout_weight="1"
+                        android:background="@color/mnana"
+                        android:gravity="center"
+                        android:text="4 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/Btn5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.05"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn7"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn8"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <TextView
+                        android:id="@+id/a5"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="5 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a6"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="6 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a7"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="7 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a8"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="8 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/Btn9"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn10"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.05"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn11"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn12"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <TextView
+                        android:id="@+id/a9"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="9 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a10"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="10 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a11"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="11 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a12"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="12 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/Btn13"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn14"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.05"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn15"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/Btn16"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <TextView
+                        android:id="@+id/a13"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="13 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a14"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="14 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a15"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="15 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/a16"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="16 (Kapalı)"
+                        android:textColor="@color/mnanaitemtext" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/baslikarkaplan" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/blue_dark" />
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <ImageButton
+                        android:id="@+id/BtnTKapat"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/kapandi" />
+
+                    <ImageButton
+                        android:id="@+id/BtnTAc"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.05"
+                        android:background="@drawable/mainbuttonbackground"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/yandi" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/mnanatablemarginbottom"
+                    android:layout_marginTop="@dimen/mnanatablemargintop" >
+
+                    <TextView
+                        android:id="@+id/TxtTKapali"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Kapalı Avize Sayısı : 0"
+                        android:textColor="@color/mnanaitemtext" />
+
+                    <TextView
+                        android:id="@+id/TxtTAc"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Açık Avize Sayısı : 0"
+                        android:textColor="@color/mnanaitemtext" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

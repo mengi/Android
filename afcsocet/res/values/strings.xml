@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"> Primotech Aydınlatma</string>
+    <string name="kontrol"> Aydınlatma Kontrol</string>
+    <string name="iletisim"> İletişim</string>
+    <string name="yardim"> Yardım</string>
+    <string name="bilgi"> Bilgi</string>
+    <string name="ayar"> Ayar</string>
+</resources>

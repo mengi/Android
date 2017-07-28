@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.afcsocet.MainActivity" >
+
+    <item
+        android:id="@+id/bilgi"
+        android:icon="@drawable/bilgi"
+        android:showAsAction="ifRoom"
+        android:title="@string/bilgi"/>
+</menu>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.afcsocet.Konrol" >
+
+    <item
+        android:id="@+id/bilgi"
+        android:icon="@drawable/bilgi"
+        android:showAsAction="ifRoom"
+        android:title="@string/bilgi"/>
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/yenile"
+        android:showAsAction="ifRoom|withText"
+        android:title=""/>
+
+</menu>

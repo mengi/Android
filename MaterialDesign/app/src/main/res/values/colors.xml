@@ -1,0 +1,20 @@
+<resources>
+    <color name="colorPrimary">#1FA275</color>
+    <color name="colorPrimaryDark">#1B956C</color>
+    <color name="colorPrimaryTransparent">#601FA275</color>
+    <color name="colorAccent">@color/colorPrimaryDark</color>
+
+    <color name="windowBackgroundColor">@android:color/white</color>
+    <color name="black_translucent">#90000000</color>
+
+    <color name="selected_gray">#ffdbdbdb</color>
+    <color name="light_gray">#FAFAFA</color>
+    <color name="counter_bg">#E21B45</color>
+
+    <color name="social_button_background">#EEEEEE</color>
+    <color name="social_button_label">#6D6D6D</color>
+    <color name="text">#6D6D6D</color>
+    <color name="social_button_count">#bdbdbd</color>
+
+    <color name="black">#000000</color>
+</resources>

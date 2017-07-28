@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CKaşıks</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="action_message">Mesaj</string>
+    <string name="send_message"> Mesaj Gönder</string>
+    <string name="drawer_open">Aç</string>
+    <string name="drawer_close">Kapat</string>
+    <string name="about">Hakkımızda</string>
+    <string name="action_about">Hakkımızda</string>
+    <string name="action_location">Lokasyon</string>
+    <string name="website">desarrollador-android.com</string>
+    <string name="github">GitHub: github.com/mengi</string>
+    <string name="title_activity_news_detail">Detay</string>
+    <string name="text_notice_info"> Duyuru Bilgi</string>
+    <string name="text_actor_info"> Oyuncu Bilgi</string>
+
+    <string-array name="drawer">
+        <item>@string/home</item>
+        <item>@string/actor</item>
+    </string-array>
+
+    <string name="fragment_notice"> Duyuru</string>
+    <string name="fragment_image"> Resim</string>
+    <string name="fragment_clip"> Klip</string>
+
+    <string name="home">Ana Sayfa</string>
+    <string name="actor">Oyuncu</string>
+    <string name="message">Mesaj</string>
+    <string name="maps">İletişim</string>
+
+    <array name="drawerIcons">
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_person_black_24dp</item>
+    </array>
+
+    <string name="youtube_api_key">AIzaSyBCgfHVGTlaVia8MwXPYB29sdqs4ZuwDDE</string>
+    <string name="map_api_key">AIzaSyCkGrIVYcXexHXJ9GChtfJOn_bRmhLnho8</string>
+
+
+    <string name="user_name"> Ad Soyad</string>
+    <string name="email_address"> Email Adresi</string>
+    <string name="phone_number"> 05235552211</string>
+    <string name="send_subject"> Mesaj</string>
+
+    <string name="progresdialog_title"> Gönderiliyor ...</string>
+    <string name="progresdialog_message"> Lütfen Bekleyiniz Mesaj Gönderiliyor.</string>
+</resources>

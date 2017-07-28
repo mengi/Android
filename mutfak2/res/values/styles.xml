@@ -1,0 +1,204 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:homeAsUpIndicator">@drawable/back_arrow</item>
+    </style>
+    
+     
+     <style name="editext_graybg" parent="android:Widget.EditText">
+          <item name="android:background">@drawable/editext_bg_gray</item>
+          <item name="android:drawablePadding">@dimen/pad_10dp</item>
+          <item name="android:ems">10</item>
+          <item name="android:inputType">textEmailAddress</item>
+          <item name="android:paddingLeft">@dimen/pad_10dp</item>
+          <item name="android:paddingRight">@dimen/pad_10dp</item>
+          <item name="android:textSize">@dimen/txt_16sp</item>
+     </style>
+     <style name="btn_white_large" parent="@style/btn">
+          <item name="android:background">@drawable/green_btn</item>
+          <item name="android:textColor">@color/white</item>
+          <item name="android:textSize">@dimen/txt_18sp</item>
+     </style>
+     
+      <style name="btn" parent="android:Widget.Holo.Light.Button">
+        <item name="android:minHeight">1dp</item>
+        <item name="android:minWidth">1dp</item>
+    </style>
+   
+    <style name="edittext_msg" parent="android:Widget.Holo.Light.EditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:ems">10</item>
+        <item name="android:imeActionId">100</item>
+        <item name="android:imeOptions">actionSend</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_marginLeft">@dimen/pad_5dp</item>
+        <item name="android:layout_marginRight">@dimen/pad_5dp</item>
+        <item name="android:paddingLeft">@dimen/pad_5dp</item>
+        <item name="android:paddingRight">@dimen/pad_5dp</item>
+        <item name="android:textColorHint">@color/main_color_gray</item>
+        <item name="android:textSize">@dimen/txt_16sp</item>
+    </style>
+    
+    <style name="editext_white" parent="android:Widget.Holo.Light.EditText">
+        <item name="android:background">@color/white</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:paddingBottom">@dimen/pad_10dp</item>
+        <item name="android:paddingTop">@dimen/pad_10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+    <style name="btn_green_white_bg" parent="@style/btn">
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingBottom">@dimen/pad_10dp</item>
+        <item name="android:paddingRight">@dimen/pad_15dp</item>
+        <item name="android:paddingTop">@dimen/pad_10dp</item>
+        <item name="android:textColor">@color/main_color_green</item>
+        <item name="android:textSize">@dimen/txt_16sp</item>
+    </style>
+    
+        <style name="alert_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="dialog_blue_button" parent="@android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:background">@drawable/blue_button_background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+    
+        <style name="Theme.Keep" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Keep</item>
+        <item name="android:windowBackground">@color/default_background_color</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionBarWidgetTheme">@style/ActionBar.Widget.Keep</item>
+    </style>
+
+    <style name="ActionBar.Solid.Keep" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ab_bottom_solid_keep</item>
+        <item name="android:titleTextStyle">@style/Keep.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Keep.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/title</item>
+    </style>
+
+    <style name="ActionBar.Widget.Keep" parent="@android:style/Theme.Holo.Light">
+        <item name="android:textColorPrimary">@color/title</item>
+        <item name="android:textColor">@color/title</item>
+        <item name="android:textColorHint">@color/hint</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
+    <style name="Box_outer">
+        <item name="android:layout_marginTop">?android:actionBarSize</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="Box_inner">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="box_text">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:gravity">top</item>
+        <item name="android:paddingLeft">8.0dp</item>
+        <item name="android:paddingTop">8.0dp</item>
+        <item name="android:paddingBottom">8.0dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">textCapSentences</item>
+    </style>
+
+    <!-- Evernote menu -->
+
+    <style name="Theme.Evernote" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Evernote</item>
+        <item name="android:windowBackground">@color/default_evernote_background</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="ActionBar.Solid.Evernote" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_evernote</item>
+        <item name="android:titleTextStyle">@style/Evernote.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Evernote.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/evernote_title</item>
+    </style>
+
+    <style name="Box_evernote_outer">
+        <item name="android:layout_marginTop">?android:actionBarSize</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="evernote_account">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/evernote_title</item>
+    </style>
+
+     <style name="evernote_box">
+         <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+    
+    <style name="evernote_button_text">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#330000</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    
+        <style name="HeaderPanel">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/table_border</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+    <style name="ListPanel">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="ListText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+</resources>

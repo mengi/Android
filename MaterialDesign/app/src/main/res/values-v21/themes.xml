@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/light_gray</item>
+
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="FabEditStyle">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_margin">@dimen/spacing_large</item>
+        <item name="android:padding">@dimen/spacing_large</item>
+        <item name="android:background">@drawable/fab_background</item>
+        <item name="android:src">@drawable/ic_action_edit</item>
+        <item name="android:outlineProvider">background</item>
+        <item name="android:stateListAnimator">@anim/fab_elevation</item>
+    </style>
+</resources>

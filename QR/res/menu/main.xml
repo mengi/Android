@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.afcsocet.MainActivity" >
+
+    <item
+        android:id="@+id/gonder"
+        android:icon="@drawable/gonder"
+        android:showAsAction="ifRoom|withText"
+        android:title="Sipariş G."/>
+    <item
+        android:id="@+id/albir"
+        android:icon="@drawable/getir"
+        android:showAsAction="ifRoom|withText"
+        android:title="Sipariş H.A."/>
+    <item
+        android:id="@+id/al"
+        android:icon="@drawable/getir"
+        android:showAsAction="ifRoom|withText"
+        android:title="Sipariş A."/>
+
+</menu>

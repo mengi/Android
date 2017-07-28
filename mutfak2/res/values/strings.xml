@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mutfak</string>
+    <string name="type_msg">Type message</string>    
+    
+<string name="drawer_open">Open</string>
+<string name="drawer_close">Close</string>
+    
+    <string name="or">or</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+    <string name="forgot_my_pwd">I’ve forgotten my password?</string>
+    <string name="my_chats">My Chats</string>
+    <string name="all_chats">All Chats</string>
+    <string name="search">Search</string>
+    <string name="to">To:</string>
+    <string name="edit">Edit</string>
+    <string name="new_chat">New Chat</string>
+    <string name="alert_wait">Please wait...</string>
+    <string name="err_fields_empty">Please fill all the fields.</string>
+    <string name="err_singup">Error occurred while signup:</string>
+    <string name="err_login">Error occurred while login:</string>
+    <string name="err_users">Error occurred while finding users:</string>
+	<string name="alert_loading">Loading...</string>
+	<string name="msg_no_user_found">No users found for chat!</string>
+
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    
+    <string name="action_search">Search</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_keepgui">Like Google Keep GUI</string>
+    <string name="first_title">Title</string>
+    <string name="buttondesc">Button</string>
+    
+    <string name="title_activity_evernote_menu">EvernoteMenuActivity</string>
+    <string name="evernote_username">Gabriele Mariotti</string>
+    <string name="evernote_lastupdate">Last sync Mar 27......</string>
+
+	<string name="ipadres"> İp Adres</string>
+	<string name="port"> Port</string>
+	<string name="Kaydet"> Kaydet</string>
+	
+	<string name="kullanici"> Kullanıcı Adı</string>
+	<string name="parola"> Parola </string>
+	<string name="giris"> Giriş</string>
+
+
+</resources>

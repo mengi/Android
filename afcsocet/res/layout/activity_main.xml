@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="118dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="128dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/rounded_corners_white"
+            android:paddingBottom="20dp"
+            android:paddingLeft="104dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="17dp"
+                android:gravity="center_horizontal"
+                android:text="Lisans Paneli"
+                android:textColor="@color/blue_dark"
+                android:textSize="19dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/rounded_corners_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal|center_vertical|fill_horizontal"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/Txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/standarttmargin"
+                android:layout_marginTop="5dp"
+                android:text="Telefonunuza Gelen Lisans Key Buraya Giriniz. "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/standarttmargin"
+                android:layout_marginTop="5dp"
+                android:text="Lisans Key Sahip Değilseniz İletişime Geçin."
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/standarttmargin"
+                android:layout_marginTop="5dp"
+                android:text="Lisan Anahtarı Etkinleştirmek İçin İletişime Geçin."
+                android:textSize="14sp" />
+
+            <TableLayout
+                android:id="@+id/TlParametreAyarlari"
+                android:layout_width="fill_parent"
+                android:layout_height="215dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal|center_vertical|fill_horizontal"
+                android:orientation="vertical" >
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/TxtLisankey"
+                        android:layout_height="@dimen/standarteditheight"
+                        android:layout_marginRight="@dimen/standarttmargin"
+                        android:background="@drawable/custom_edit_text"
+                        android:hint="Lisans Key Giriniz"
+                        android:layout_weight="8" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="2dp" >
+
+                    <Button
+                        android:id="@+id/BtnGonder"
+                        android:layout_height="@dimen/standarteditheight"
+                        android:layout_marginRight="@dimen/standarttmargin"
+                        android:background="@drawable/style_button_mavi"
+                        android:layout_weight="8"
+                        android:text="Gönder" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="4dp"
+                android:background="#999999" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

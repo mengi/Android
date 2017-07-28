@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListPanel" >
+
+    <TextView
+        android:id="@+id/TxtAciklama"
+        style="@style/ListText"
+        android:layout_weight="2"
+        android:text="Açıklama" />
+
+    <TextView
+        android:id="@+id/TxtUcret"
+        style="@style/ListText"
+        android:layout_weight="1"
+        android:text="Ücret (TL)" />
+
+</LinearLayout>

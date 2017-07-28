@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "762207194586",
+    "firebase_url": "https://catalhuyukkasiks.firebaseio.com",
+    "project_id": "catalhuyukkasiks",
+    "storage_bucket": "catalhuyukkasiks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762207194586:android:d61f53a83867d0c4",
+        "android_client_info": {
+          "package_name": "com.example.javier.spoonplayers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762207194586-vh1bjtfq2pbpe9qqo33dmag3u61e6nr4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.javier.spoonplayers",
+            "certificate_hash": "89dbb30b21a1257fbc17bd0867d764ef22bd9d5b"
+          }
+        },
+        {
+          "client_id": "762207194586-lceihkode4nupj75tmk1i2b488q7aktu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbQL9yeEYlQOqp5atGTdCzj5nCOGaTs9I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762207194586-lceihkode4nupj75tmk1i2b488q7aktu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

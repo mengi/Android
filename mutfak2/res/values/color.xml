@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white_smoke">#F7F7F7</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="main_color_green">#00b863</color>
+    <color name="main_color_gray_dk">#3b3b3b</color>
+    <color name="main_color_gray_lt">#acacac</color>
+    <color name="main_color_gray">#7d7d7d</color>
+    <color name="gray_light">#e8e8e8</color>
+    
+    
+    <color name="float_transparent">#66000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    
+    
+    <color name="default_background_color">#E4E4E4</color>
+    <color name="title">#666666</color>
+    <color name="hint">#DDDDDD</color>
+        
+    <color name="default_evernote_background">#313332</color> 
+    <color name="evernote_title">#ffffff</color>
+    <color name="evernote_linebutton">#333534</color>
+    <color name="evernote_list_divider">#333534</color>
+    <color name="evernote_footer">#2c2c2c</color>
+    <color name="evernote_footer_text">#5b5b5c</color>
+    <color name="evernote_button_pressed">#9eb39b</color>
+    <color name="evernote_button_bkg">#464847</color>
+    
+    
+        <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="mnanabaslik">#2682bc</color>
+    <color name="mnanabasliktext">#ffffffff</color>
+    <color name="mnana">#FFFFFF</color>
+    <color name="mnanaitemtext">#ff333333</color>
+    <color name="label">#ff333333</color>
+    <color name="text">#ff333333</color>
+
+    <!-- Custom Tema -->
+    <color name="background_color">#FFFFFF</color>
+    <color name="text_color">#333333</color>
+    <color name="button_blue_textcolor">#FFFFFF</color>
+    <color name="edittext_textcolor">#7a7a7a</color>
+    <color name="edittext_backgroundcolor">#FFFFFF</color>
+    <color name="edittext_bordercolor">#C0C0C0</color>
+    <color name="edittext_bordercolor_focused">#66afe9</color>
+    <color name="acilisSayfasi_header_background">#66afe9</color>
+    <color name="edittext_backgroundcolordisabled">#DDDDDD</color>
+    <!-- #Custom Tema -->
+
+    <color name="blue_light">#00b863</color>
+    <color name="blue_dark">#00b863</color>
+    <color name="grey_light">#DCDDD8</color>
+    <color name="view">#95a5a6</color>
+    <color name="basic_blue1">#5781a9</color>
+    <color name="basic_blue2">#a4bcc6</color>
+    <color name="basic_blue3">#995781a9</color>
+    <color name="basic_orange1">#99eca14f</color>
+    <color name="basic_orange2">#66eca14f</color>
+    <color name="basic_white1">#eeffffff</color>
+    <color name="basic_white2">#99ffffff</color>
+</resources>

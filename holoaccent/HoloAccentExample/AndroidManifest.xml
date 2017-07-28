@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.menginarsoft.control" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MainActivity" >
+        
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- Tabbed Activity -->
+        <activity android:name=".activity.TabbedActivity" />
+        <activity
+            android:name=".activity.themed.TabbedActivityColoredAB"
+            android:theme="@style/Theme.HoloAccent.ColoredActionBar" />
+        <activity
+            android:name=".activity.themed.TabbedActivityColoredABInverse"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.ColoredActionBar.Inverse" />
+        <activity
+            android:name=".activity.themed.TabbedActivityLight"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.Light" />
+        <activity
+            android:name=".activity.themed.TabbedActivityLightDarkAB"
+            android:theme="@style/Theme.HoloAccent.Light.DarkActionBar" />
+        <activity
+            android:name=".activity.themed.TabbedActivityLightColoredAB"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.Light.ColoredActionBar" />
+        <activity
+            android:name=".activity.themed.TabbedActivityLightColoredABInverse"
+            android:theme="@style/Theme.HoloAccent.Light.ColoredActionBar.Inverse" />
+
+        <!-- Tab-Strip Activity -->
+        <activity android:name=".activity.TabbedStripActivity" />
+        <activity
+            android:name=".activity.themed.TabbedStripActivityColoredAB"
+            android:theme="@style/Theme.HoloAccent.ColoredActionBar" />
+        <activity
+            android:name=".activity.themed.TabbedStripActivityColoredABInverse"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.ColoredActionBar.Inverse" />
+        <activity
+            android:name=".activity.themed.TabbedStripActivityLight"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.Light" />
+        <activity
+            android:name=".activity.themed.TabbedStripActivityLightDarkAB"
+            android:theme="@style/Theme.HoloAccent.Light.DarkActionBar" />
+        <activity
+            android:name=".activity.themed.TabbedStripActivityLightColoredAB"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.Light.ColoredActionBar" />
+        <activity
+            android:name=".activity.themed.TabbedStripActivityLightColoredABInverse"
+            android:theme="@style/Theme.HoloAccent.Light.ColoredActionBar.Inverse" />
+
+        <!-- Spinner Activity -->
+        <activity
+            android:name=".activity.SpinnerActivity"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".activity.themed.SpinnerActivityColoredAB"
+            android:theme="@style/Theme.HoloAccent.ColoredActionBar"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".activity.themed.SpinnerActivityColoredABInverse"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.ColoredActionBar.Inverse"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".activity.themed.SpinnerActivityLight"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.Light"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".activity.themed.SpinnerActivityLightDarkAB"
+            android:theme="@style/Theme.HoloAccent.Light.DarkActionBar"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".activity.themed.SpinnerActivityLightColoredAB"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.Light.ColoredActionBar"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".activity.themed.SpinnerActivityLightColoredABInverse"
+            android:theme="@style/Theme.HoloAccent.Light.ColoredActionBar.Inverse"
+            android:uiOptions="splitActionBarWhenNarrow" />
+
+        <!-- Preferences Activity -->
+        <activity
+            android:name=".activity.PreferencesActivity"
+            android:label="@string/pref_title"
+            android:parentActivityName=".activity.TabbedActivity" />
+        <activity
+            android:name=".activity.themed.PreferencesActivityColoredAB"
+            android:label="@string/pref_title"
+            android:theme="@style/Theme.HoloAccent.ColoredActionBar" />
+        <activity
+            android:name=".activity.themed.PreferencesActivityColoredABInverse"
+            android:label="@string/pref_title"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.ColoredActionBar.Inverse" />
+        <activity
+            android:name=".activity.themed.PreferencesActivityLight"
+            android:label="@string/pref_title"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.Light" />
+        <activity
+            android:name=".activity.themed.PreferencesActivityLightDarkAB"
+            android:label="@string/pref_title"
+            android:theme="@style/Theme.HoloAccent.Light.DarkActionBar" />
+        <activity
+            android:name=".activity.themed.PreferencesActivityLightColoredAB"
+            android:label="@string/pref_title"
+            android:logo="@drawable/ic_logo_black"
+            android:theme="@style/Theme.HoloAccent.Light.ColoredActionBar" />
+        <activity
+            android:name=".activity.themed.PreferencesActivityLightColoredABInverse"
+            android:label="@string/pref_title"
+            android:theme="@style/Theme.HoloAccent.Light.ColoredActionBar.Inverse" />
+
+        <!-- Dialog Activity -->
+        <activity
+            android:name=".activity.DialogActivity"
+            android:theme="@style/Theme.HoloAccent.Dialog" />
+        <activity
+            android:name=".activity.themed.DialogActivityLight"
+            android:theme="@style/Theme.HoloAccent.Light.Dialog" />
+
+        <!-- Giris Paneli -->
+        <activity
+            android:name=".activity.GirisActivity"
+            android:logo="@drawable/ic_launcher"
+            android:theme="@style/Theme.HoloAccent.Light" />
+        <!-- Kayıt Paneli -->
+        <activity
+            android:name=".activity.KayitActivity"
+            android:logo="@drawable/ic_launcher"
+            android:theme="@style/Theme.HoloAccent.Light" />
+
+        <!-- Ana Kontrol -->
+        <activity
+            android:name=".activity.AnaKontrolActivity"
+            android:logo="@drawable/ic_launcher"
+            android:theme="@style/Theme.HoloAccent.Light" />
+
+        <!-- Fragment Hız Artır Azalt -->
+        <activity
+            android:name=".activity.HizArAzActivity"
+            android:logo="@drawable/ic_launcher"
+            android:theme="@style/Theme.HoloAccent.Light" />
+
+        <!-- Aydınlatma Kontrolü -->
+        <activity
+            android:name=".activity.AyKontrolActivity"
+            android:logo="@drawable/ic_launcher"
+            android:theme="@style/Theme.HoloAccent.Light" />
+        <!-- Aydınlatma Kontrolü -->
+        <activity
+            android:name=".activity.ButtonDeneme"
+            android:logo="@drawable/ic_launcher"
+            android:theme="@style/Theme.HoloAccent.Light" />
+
+        <receiver android:name=".activity.MyBroadcastReceiver" >
+        </receiver>
+        <receiver android:name=".activity.Deneme" >
+        </receiver>
+    </application>
+
+</manifest>

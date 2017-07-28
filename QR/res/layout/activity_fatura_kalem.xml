@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mnana"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/LyUst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/TxtUrunKodu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/standarteditheight"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="6"
+                    android:background="@drawable/custom_edit_text"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/BtnBarkodAc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/standarteditheight"
+                    android:layout_marginLeft="@dimen/standarttmargin"
+                    android:layout_marginRight="@dimen/standarttmargin"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_button_mavi"
+                    android:src="@drawable/ic_visibility_white_36dp"
+                    android:textColor="#ffffff" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="42dp"
+            android:background="#999999" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LyOrta"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/LyUst" >
+
+        <LinearLayout style="@style/HeaderPanel" >
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="Ürün Kodu" />
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="Stok Adı" />
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="Miktar" />
+
+            <TextView
+                style="@style/HeaderText"
+                android:layout_weight="2"
+                android:text="Fatura Tarihi" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/LstVw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
