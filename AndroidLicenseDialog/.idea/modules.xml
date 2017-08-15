@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidLicenseDialog.iml" filepath="$PROJECT_DIR$/AndroidLicenseDialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/applicense.iml" filepath="$PROJECT_DIR$/applicense.iml" />
+      <module fileurl="file://C:\project\Android\AndroidLicenseDialog\app\app.iml" filepath="C:\project\Android\AndroidLicenseDialog\app\app.iml" />
+      <module fileurl="file://C:\project\Android\AndroidLicenseDialog\applicense.iml" filepath="C:\project\Android\AndroidLicenseDialog\applicense.iml" />
     </modules>
   </component>
 </project>

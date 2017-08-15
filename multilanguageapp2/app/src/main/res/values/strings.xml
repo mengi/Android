@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Çoklu Dil App</string>
+    <string name="action_en">İnglizce</string>
+    <string name="action_tr">Türkçe</string>
+
+    <string name="welcome">Hoş Geldiniz!</string>
+    <string name="email">Email Adres</string>
+    <string name="password">Parola</string>
+    <string name="login">Giriş</string>
+    <string name="signup">Hesabınız Yok Mu? Kaydol</string>
+</resources>

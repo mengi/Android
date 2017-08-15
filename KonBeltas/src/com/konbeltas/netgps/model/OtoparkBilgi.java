@@ -41,7 +41,7 @@ public class OtoparkBilgi {
 		
 		try {
 			SQLiteDatabase DtBs = MSabit.MDbBaglanti.getReadableDatabase();
-			String SorguC = "SELECT OTOPARKKODU "
+			String SorguC = "SELECT * OTOPARKKODU "
 					+ "FROM TBLOTOPARKBILGI WHERE OTOPARKKODU=?";
 			
 			Cursor Crs = DtBs.rawQuery(SorguC, new String [] {_OtoparkKodu});

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Multi Language App</string>
+    <string name="action_en">English</string>
+    <string name="action_tr">Turkish</string>
+
+    <string name="welcome">Welcome!</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Don\'t have account? Sign Up</string>
+</resources>
