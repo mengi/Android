@@ -83,7 +83,7 @@
                     android:textColor="@color/transparent_black" />
 
                 <TextView
-                    android:id="@+id/textViewSubtitleView"
+                    android:id="@+id/codeTextView"
                     style="@style/Base.TextAppearance.AppCompat.Small"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

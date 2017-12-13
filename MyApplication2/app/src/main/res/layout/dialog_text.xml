@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/material_16dp">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical"
+            android:showDividers="end">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/material_16dp"
+                android:text="@string/app_name_about"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/cardview_line_size" />
+
+            <TextView
+                android:id="@+id/infromationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/information"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/md_grey_700"
+                android:textSize="@dimen/list_body" />
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/material_4dp"
+    android:background="@drawable/circle_table_card"
+    android:stretchColumns="3">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_grey_500"
+        android:padding="@dimen/material_8dp">
+
+        <TextView
+            android:id="@+id/numberTextView"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/stateTextView"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+    </TableRow>
+
+</TableLayout>

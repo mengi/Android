@@ -1,0 +1,212 @@
+<resources>
+    <string name="app_name">Stok Takip App</string>
+
+    <string name="app_name_about">Stok Takip App Hakkında</string>
+
+    <string name="navigation_drawer_open">Aç</string>
+    <string name="navigation_drawer_close">Kapat</string>
+    <string name="stock_input_output">Stok Giriş - Çıkış</string>
+    <string name="stock_input">Stok Giriş</string>
+    <string name="stock_output">Stok Çıkış</string>
+    <string name="stock_list">Stok Listesi</string>
+    <string name="stock_analysis">Stok Analiz</string>
+    <string name="stock_between_date">Stok Analiz (Tarih)</string>
+    <string name="stock_delete_update">Stok  Sil - Güncelle</string>
+    <string name="stock_delete">Stok Sil</string>
+    <string name="stock_update">Stok Güncelle</string>
+    <string name="new_stock_register">Yeni Stok Kayıt</string>
+    <string name="app_information">Uygulama Hakkında Bilgi Edinin</string>
+    <string name="app_error_stock_info">Hasarlı Ürün Hakkında Bilgi Edinin</string>
+    <string name="app_case_information">Kasa Bilgi Edinin</string>
+
+    <string name="stock_database">Veritabanı</string>
+    <string name="all_stock_to_exel">Tüm Stoğu Exel Aktar</string>
+    <string name="all_stok_exel_to_programing">Exeli Programa Aktar</string>
+    <string name="list_stock_to_exel">Listeyi Exel Aktar</string>
+    <string name="stock_hourly">Haftalık</string>
+    <string name="stock_daily">Günlük</string>
+    <string name="stock_monthly">Aylık</string>
+    <string name="stock_save">Kaydet</string>
+    <string name="product_name_or_code">Ürün Adı veya Kodu</string>
+    <string name="email_send">Email Gönder</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="stock_complaint">İstek - Şikayet</string>
+    <string name="stock_case">Kasa</string>
+
+    <string name="complaint_send">Gönder</string>
+    <string name="stock_setting">Ayarlar</string>
+    <string name="product_info">Ürün Bilgileri</string>
+    <string name="product_har">Ürün Hareketleri</string>
+    <string name="all_product_input">Topalm Stok Girişi</string>
+    <string name="all_product_output">Topalm Stok Çıkışı</string>
+    <string name="report_name">Rapor Adı</string>
+    <string name="stock_check">Tamam</string>
+    <string name="delete_report">Rapor Sil</string>
+    <string name="product_date">Tarih</string>
+    <string name="product_numbers">Adet</string>
+    <string name="product_state">Durum</string>
+    <string name="scan_bar_code"> Scan Barcode</string>
+    <string name="price">Fiyat</string>
+
+    <string name="product_name">Ürün Adı</string>
+    <string name="product_code">Ürün Kod</string>
+    <string name="product_number">Adet</string>
+    <string name="purchase_price">Alış Fiyatı</string>
+    <string name="sale_price">Satış Fiyatı</string>
+    <string name="product_explain"> Açıklama</string>
+    <string name="other_operation">Diğer İşlemler</string>
+    <string name="category_image_view_description">A</string>
+    <string name="total_output">Toplam Çıkış</string>
+    <string name="total_input">Toplam Giriş</string>
+    <string name="total_amount">Toplam Tutar</string>
+    <string name="output">Çıkış</string>
+    <string name="input">Giriş</string>
+
+    <string name="output_total">Çıkış Tutar</string>
+    <string name="input_total">Giriş Tutar</string>
+
+    <string name="zero">0</string>
+    <string name="zero_sum">0.0 TL</string>
+    <string name="zero_four">0.0000 TL</string>
+    <string name="search_for">Arama Yap</string>
+    <string name="barcod_read">Barkod Oku</string>
+    <string name="up">Artan</string>
+    <string name="down">Azalan</string>
+
+    <string name="error_stock_delete">Sil</string>
+    <string name="error_stock_update">Güncelle</string>
+    <string name="app_error_stock_detail">Hatalı Stok Detay</string>
+
+    <string name="app_error_stock_success_delete">Hatalı Stok Silindi</string>
+    <string name="app_error_stock_success_update">Hatalı Stok Güncellendi</string>
+    <string name="app_error_stock_warning_delete">Hatalı Stok Silme İşlemi Başarısız!!</string>
+    <string name="app_error_stock_warning_update">Hatalı Stok Güncelleme İşlemi Başarısız!!</string>
+    <string name="app_error_stock_number">Stok Sayısı Yetersiz!!</string>
+
+    <string-array name="currency">
+        <item>Türk Lirası</item>
+        <item>Amerikan Doları</item>
+        <item>Euro</item>
+        <item>Sterlin</item>
+    </string-array>
+
+    <!-- Error, warning, success-->
+    <string name="success">İşlem Başarılı</string>
+    <string name="warning">İşlem Başarısız</string>
+    <string name="exit_app">Çıkmak İstediğinize Emin Misiniz ?</string>
+    <string name="yes_app">Evet</string>
+    <string name="no_app">Hayır</string>
+
+    <string name="error_stock_add_info">Hatalı Stok Geri Eklendi</string>
+
+    <string name="error_stock_state">Hatalı Ürünler ile İşlem Yapınız ?</string>
+    <string name="error_stock_detail">Detay</string>
+    <string name="error_stock_add">Geri Ekle</string>
+
+    <string name="database_connection_error"> Veritabanı Bağlanılamıyor!!</string>
+    <string name="delete_stock_success">Stok Silme İşlemi Başarılı</string>
+    <string name="delete_stock_error">Stok Silme İşlemi Başarısız!!</string>
+    <string name="not_found_stock">Stok Kayıtlı Değil!!</string>
+
+    <string name="add_stock_success">Stok Ekleme İşlemi Başarılı</string>
+    <string name="add_stock_error">Stok Ekleme İşlemi Başarısız!!</string>
+    <string name="extra_stock_success">Stok Çıkarma İşlemi Başarılı</string>
+    <string name="extra_stock_error">Stok Çıkarma İşlemi Başarısız!!</string>
+
+    <string name="valid_proCode">Ürün Kodu Alanını Doldurunuz!!</string>
+    <string name="valid_proNum_trim">Ürün Adeti Alanını Doldurunuz!!</string>
+    <string name="valid_proName">Ürün Adı Alanını Doldurunuz!!</string>
+    <string name="valid_sale_stock">Ürün Satış Fiyat Alanını Doldurunuz!!</string>
+    <string name="valid_purchase_stock">Ürün Alış Fiyat Alanını Doldurunuz!!</string>
+    <string name="valid_proNum_nu">Adet 0 dan Küçük, Eşit ve Boş Olamaz!!</string>
+    <string name="valid_sale_nu">Satış Fiyat 0 dan Küçük, Eşit ve Boş Olamaz!!</string>
+    <string name="valid_purchase_nu">Alış Fiyat 0 dan Küçük, Eşit ve Boş Olamaz!!</string>
+
+    <string name="valid_date">Tarih Alanını Giriniz!!</string>
+
+    <string name="not_number_stock">Yeterli Stok Yok!!</string>
+
+    <string name="update_stock_success">Stok Güncelleme İşlemi Başarılı</string>
+    <string name="update_stock_error">Stok Güncelleme İşlemi Başarısız!!</string>
+    <string name="register_stock">Stok Kayıtlıdır!!</string>
+
+    <string name="okey">Tamam</string>
+    <string name="out">Çıkış</string>
+
+    <string name="backup_success">Yedek Alma İşlemi Başarılı</string>
+    <string name="backup_error">Yedek Alma İşlemi Başarısız!!</string>
+    <string name="report_created_stock">Rapor Oluşturmak İçin Ürün Seçiniz!!</string>
+    <string name="not_report_created_stock">Rapor Oluşturalacak Stok Hareket Bulunamadı!!</string>
+    <string name="report_name_select">Rapor İsmi Giriniz!!</string>
+
+    <string name="backup_alertdialog">Yedek Alınıyor..</string>
+    <string name="report">Rapor</string>
+    <string name="report_create">Rapor Oluştur</string>
+    <string name="report_created">Rapor Oluşturuldu</string>
+    <string name="not_report_create">Rapor Oluşturalamadı!!</string>
+    <string name="file_share">Dosya Paylaş</string>
+
+    <string name="report_and_reports_select">Rapor veya Raporlar Seç</string>
+    <string name="report_and_reports_delete">Rapor veya Raporlar Sil</string>
+
+    <string name="delete_success">Silme İşlemi Başarılı</string>
+    <string name="delete_error">Silme İşlemi Başarısız!!</string>
+    <string name="report_select">Rapor veya Raporlar Seçiniz!!</string>
+
+    <string name="notification_text">Stokdan Az Kaldı Ekleyiniz...</string>
+    <string name="file_error_read">Exelden Okunamadı!!</string>
+    <string name="exel_to_database_error">Exelden Veritabnına Aktarılamdı!!</string>
+    <string name="exel_to_database_success">Exelden Veritabnına Aktar İşlemi Başarılı</string>
+
+    <string name="delete_database"> Veritabanını Silmek İstedğinize Emin Misiniz ?</string>
+    <string name="database_to_exel">Tüm Stoğu Exele Aktarmak İstediğinize Emin Misiniz ?</string>
+    <string name="exel_to_database">Exel Programa Aktarmak İstediğinize Emin Misiniz ?</string>
+    <string name="delete_report_da">Rapor Silmek İstediğinize Emin Misiniz ?</string>
+    <string name="delete_database_name">Veritabanı Sil</string>
+
+    <string name="not_report_email">Email Atılacak Rapor Yok!!</string>
+    <string name="not_report_delete">Silinecek Rapor Yok!!</string>
+
+    <string name="first_date">İlk Tarih</string>
+    <string name="second_date"> İkinci Tarih</string>
+    <string name="not_stockmov_size"> Tarihler Arasında Stok Giriş-Çıkışı Olmamış!!</string>
+    <string name="backup_week_month_daily">Günlük - Haftalık - Aylık Yedek</string>
+
+    <string name="error_stock">Hatalı Ürün</string>
+    <string name="not_error_stock">Hatalı Ürün Değil</string>
+
+    <string name="error_stock_alert">Hatalı Ürün Çıkışı Başarısız!!</string>
+    <string name="error_stock_success">Hatalı Ürün Çıkışı Başarılı</string>
+
+    <string name="error_stock_size_alert"> Hatalı Ürün Çıkışı Olmamış!!</string>
+
+    <string name="information">
+        Stok Takip App Programı ile Stok Giriş ve Çıkışının Haricinde,
+
+            Ürün Listeleme Sayfasından,
+            - Ürün Adı ve Ürün Kodundan Arama Yapabilir
+            - Ürüne Ait Ayrıntılı Rapor Sayfasına Geçebilir
+            - Artan Sıralama ile Stoğunuzda Biten Ürünleri Liste Başına Çekebilir
+            - Azalan Sıralama ile Stoğunuzda Fazla Bulunan Ürünleri Hızlıca Görebilirsiniz.
+
+            Ürünün Ayrıntılı Rapor Sayfasından,
+            - Ürünün Güncel Stoğuna
+            - Ürüne Ait alış ve Satış Fiyatlarına
+            - Ürünün Toplam Stok Giriş ve Çıkışına
+            - Ürünün Son Hareket Raporlarına Ulaşabilirsiniz.
+
+            Stok Analiz Sayfasından,
+            - Günlük, Haftalık ve Aylık Olarak Ne Kadar stok girişi
+            ve çıkışı Yaptığınızı Gözlemleyebilirsiniz.
+
+            Veritabanı Sayfanızdan,
+            - Yedekleme Seçeneği ile Birlikte Stok Listenizi , Günlük Stok Analizini,
+            Haftalık Stok Analizini ve Aylık Stok Analizini Excel Formatında Telefonunuza
+            Kayıt Edebilirsiniz.
+            - Yedeklediğiniz Stok Listesini Bilgisayar Üzerinde Değişiklik Yaparak
+            Değişiklikleri Geri Yükle Seçeneği ile Programa Entegre Edebilirsiniz.
+            - Listenizden Seçtiğiniz Ürünleri Excel Dosyası Olarak Kayıt Edebilirsiniz
+            - Dosyalarınızı Email Olarak Gönderebilirsiniz.
+    </string>
+
+</resources>

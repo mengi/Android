@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_stock_input_outut"
+            android:icon="@drawable/ic_folder_black_24dp"
+            android:title="@string/stock_input_output" />
+        <item
+            android:id="@+id/nav_stock_list"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="@string/stock_list" />
+
+        <item
+            android:id="@+id/nav_new_stock_register"
+            android:icon="@drawable/ic_create_new_folder_black_24dp"
+            android:title="@string/new_stock_register" />
+
+        <item
+            android:id="@+id/nav_stock_delete_update"
+            android:icon="@drawable/ic_system_update_alt_black_24dp"
+            android:title="@string/stock_delete_update" />
+
+        <item
+            android:id="@+id/nav_stock_analysis"
+            android:icon="@drawable/ic_assessment_black_24dp"
+            android:title="@string/stock_analysis" />
+
+        <item
+            android:id="@+id/nav_stock_analysis_date"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="@string/stock_between_date" />
+
+    </group>
+
+    <item android:title="@string/other_operation">
+        <menu>
+            <item
+                android:id="@+id/nav_stock_database"
+                android:icon="@drawable/ic_view_agenda_black_24dp"
+                android:title="@string/stock_database" />
+
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/stock_setting" />
+        </menu>
+    </item>
+
+</menu>

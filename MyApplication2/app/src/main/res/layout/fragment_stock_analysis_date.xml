@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_4dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/material_4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/firstDateButton"
+                android:layout_width="@dimen/material_64dp"
+                android:layout_height="@dimen/material_32dp"
+                android:background="@drawable/circle_button"
+                android:text="Tarih"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/firstDateEditText"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/material_16dp"
+                android:layout_marginRight="@dimen/material_16dp"
+                android:inputType="text"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:hint="@string/first_date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/material_4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/secondDateButton"
+                android:layout_width="@dimen/material_64dp"
+                android:layout_height="@dimen/material_32dp"
+                android:background="@drawable/circle_button"
+                android:text="Tarih"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/secondDateEditText"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/material_16dp"
+                android:layout_marginRight="@dimen/material_16dp"
+                android:inputType="text"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:hint="@string/second_date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/material_4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/stockDateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:elevation="4dp"
+                android:text="@string/search_for"
+                android:textColor="#fff"
+                android:textSize="@dimen/line_size" />
+
+            <Button
+                android:id="@+id/stockReportCreateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/material_2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:elevation="4dp"
+                android:text="@string/report_create"
+                android:textColor="#fff"
+                android:textSize="@dimen/line_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/material_4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="3">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/output_total"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/input_total"
+                        android:textColor="@android:color/holo_green_dark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/total_amount"
+                        android:textColor="@android:color/black" />
+
+                </TableRow>
+
+                <TableRow android:padding="@dimen/material_8dp">
+
+                    <TextView
+                        android:id="@+id/outDateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/zero_sum"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/inputDateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/zero_sum"
+                        android:textColor="@android:color/holo_green_dark" />
+
+                    <TextView
+                        android:id="@+id/totalDateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/zero_sum"
+                        android:textColor="@android:color/black" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/material_8dp"
+            android:background="@drawable/circle_table"
+            android:stretchColumns="4">
+
+            <TableRow
+                android:background="@color/colorAccent"
+                android:padding="@dimen/material_8dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="@string/product_name"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/product_numbers"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/price"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/product_state"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/product_date"
+                    android:textColor="@android:color/white" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerDateStokMovList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/material_4dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>

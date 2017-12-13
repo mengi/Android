@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.android.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/jxl.jar')
+    implementation files('libs/poi-3.7.jar')
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:25.1.0'
+    implementation 'com.android.support:design:25.1.0'
+    implementation 'com.android.support:cardview-v7:25.1.0'
+    implementation 'com.android.support:recyclerview-v7:25.1.0'
+    implementation 'com.android.support:support-v4:25.1.0'
+
+    implementation 'android.arch.persistence.room:runtime:1.0.0-alpha1'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0-alpha1'
+
+    compile 'com.journeyapps:zxing-android-embedded:2.0.1@aar'
+    compile 'com.journeyapps:zxing-android-legacy:2.0.1@aar'
+    compile 'com.journeyapps:zxing-android-integration:2.0.1@aar'
+    compile 'com.google.zxing:core:3.0.1'
+}

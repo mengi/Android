@@ -20,15 +20,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".PersonelListActivity"
-            android:label="@string/action_user_list">
-        </activity>
-
-        <activity
-            android:name=".DetailActivity"
-            android:label="@string/action_user_info">
-        </activity>
     </application>
 
 </manifest>

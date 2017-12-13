@@ -1,0 +1,275 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_margin="@dimen/material_8dp"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical"
+            android:showDividers="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/product_info"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/cardview_line_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/material_8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/material_4dp"
+                android:stretchColumns="2">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/material_4dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/product_name"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/productNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/material_4dp"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/holo_green_dark" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/material_4dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/product_number"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/productNumberTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/material_4dp"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/holo_green_dark" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/material_4dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/purchase_price"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/purchaseTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/material_4dp"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/holo_green_dark" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/material_4dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/sale_price"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/saleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/material_4dp"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/holo_green_dark" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/material_8dp"
+            android:stretchColumns="3">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/total_output"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/total_input"
+                    android:textColor="@android:color/holo_green_dark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/total_amount"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <TableRow android:padding="@dimen/material_8dp">
+
+                <TextView
+                    android:id="@+id/outTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <TextView
+                    android:id="@+id/inputTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@android:color/holo_green_dark" />
+
+                <TextView
+                    android:id="@+id/totalTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zero_sum"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_margin="@dimen/material_8dp"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical"
+            android:showDividers="end">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/product_har"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/cardview_line_size" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/material_8dp"
+            android:background="@drawable/circle_table"
+            android:stretchColumns="3">
+
+            <TableRow
+                android:padding="@dimen/material_8dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/product_numbers"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/price"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/product_state"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/product_date"
+                    android:textColor="@android:color/white" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerReportStokList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/material_4dp"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+</LinearLayout>
