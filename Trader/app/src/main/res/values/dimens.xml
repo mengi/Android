@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="material_1dp">1dp</dimen>
+    <dimen name="material_2dp">2dp</dimen>
+    <dimen name="material_4dp">4dp</dimen>
+    <dimen name="material_8dp">8dp</dimen>
+    <dimen name="material_9dp">9dp</dimen>
+    <dimen name="material_12dp">12dp</dimen>
+    <dimen name="material_16dp">16dp</dimen>
+    <dimen name="material_24dp">24dp</dimen>
+    <dimen name="material_32dp">32dp</dimen>
+    <dimen name="material_48dp">48dp</dimen>
+    <dimen name="material_56dp">56dp</dimen>
+    <dimen name="material_64dp">64dp</dimen>
+    <dimen name="material_72dp">72dp</dimen>
+    <dimen name="material_96dp">96dp</dimen>
+    <dimen name="material_108dp">108dp</dimen>
+
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="title_size_two">18sp</dimen>
+    <dimen name="button_text_size">12sp</dimen>
+
+</resources>

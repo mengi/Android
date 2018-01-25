@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Trader App</string>
+    <string name="app_portfoy">Hesap Özeti</string>
+    <string name="hint_username">Kullanıcı Adı</string>
+    <string name="hint_password">Parola</string>
+    <string name="btn_login">Tamam</string>
+
+    <string name="txt_movable">Menkul</string>
+    <string name="txt_quantity_t2">Miktar T2</string>
+    <string name="txt_price">Fiyat</string>
+    <string name="txt_total">Tutar</string>
+
+    <string name="txt_total_amount">Toplam Tutar:</string>
+    <string name="txt_total_zero"> 0.0</string>
+</resources>
