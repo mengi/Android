@@ -1,12 +1,19 @@
 package com.android.myapplication.ui.activity;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -38,7 +45,14 @@ import com.android.myapplication.ui.fragment.FragmentStockDelUp;
 import com.android.myapplication.ui.fragment.FragmentStockInOu;
 import com.android.myapplication.ui.fragment.FragmentStockSave;
 
-public class MainActivity extends AppCompatActivity implements ScanResultReceiver {
+import java.util.ArrayList;
+
+import rebus.permissionutils.AskAgainCallback;
+import rebus.permissionutils.FullCallback;
+import rebus.permissionutils.PermissionEnum;
+import rebus.permissionutils.PermissionManager;
+
+public class MainActivity extends AppCompatActivity implements ScanResultReceiver, FullCallback {
 
     private DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -70,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements ScanResultReceive
             intent = new Intent(getApplicationContext(), BackupService.class);
             startService(intent);
         }
+
 
         ReportType.isChecked = new boolean[appDatabase.stockDao().getAllStock().size()];
 
@@ -272,6 +287,30 @@ public class MainActivity extends AppCompatActivity implements ScanResultReceive
         toast.show();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        ArrayList<PermissionEnum> permissionEnumArrayList = new ArrayList<>();
+        permissionEnumArrayList.add(PermissionEnum.CAMERA);
+        permissionEnumArrayList.add(PermissionEnum.WRITE_EXTERNAL_STORAGE);
+        permissionEnumArrayList.add(PermissionEnum.READ_EXTERNAL_STORAGE);
+
+
+        PermissionManager.Builder()
+                .key(9000)
+                .permissions(permissionEnumArrayList)
+                .askAgain(true)
+                .askAgainCallback(new AskAgainCallback() {
+                    @Override
+                    public void showRequestPermission(UserResponse response) {
+                        showDialog(response);
+                    }
+                })
+                .callback(MainActivity.this)
+                .ask(MainActivity.this);
+    }
+
     public boolean serviceWork() {
 
         ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
@@ -282,4 +321,35 @@ public class MainActivity extends AppCompatActivity implements ScanResultReceive
         }
         return false;
     }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        PermissionManager.handleResult(this, requestCode, permissions, grantResults);
+    }
+
+    @Override
+    public void result(ArrayList<PermissionEnum> arrayList, ArrayList<PermissionEnum> arrayList1, ArrayList<PermissionEnum> arrayList2, ArrayList<PermissionEnum> arrayList3) {
+
+    }
+
+    private void showDialog(final AskAgainCallback.UserResponse response) {
+        new AlertDialog.Builder(MainActivity.this)
+                .setTitle("İzin Gereksinimleri")
+                .setMessage("Uygulama için gerekli izinleri veriniz!!")
+                .setPositiveButton("Tamam", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        response.result(true);
+                    }
+                })
+                .setNegativeButton("Şimdi Değil", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        response.result(false);
+                    }
+                })
+                .setCancelable(false)
+                .show();
+    }
+
 }

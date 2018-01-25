@@ -1,6 +1,7 @@
 package com.android.myapplication.ui.fragment;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
@@ -29,7 +30,8 @@ public class FragmentScan extends Fragment {
 
             IntentIntegrator integrator = new IntentIntegrator(this.getActivity()).forSupportFragment(this);
             // use forSupportFragment or forFragment method to use fragments instead of activity
-            integrator.setDesiredBarcodeFormats(IntentIntegrator.ONE_D_CODE_TYPES);
+            integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
+
             integrator.setPrompt(this.getString(R.string.scan_bar_code));
             integrator.setResultDisplayDuration(0); // milliseconds to display result on screen after scan
             integrator.setCameraId(0);  // Use a specific camera of the device
